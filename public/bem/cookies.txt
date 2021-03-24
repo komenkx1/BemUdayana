@@ -1,0 +1,8 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.fontawesome.com	TRUE	/	FALSE	1999999999	__cfduid	db9e03900f1c77af12f24192fca287b681616552311
+kit.fontawesome.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+bemudayana.id	TRUE	/	FALSE	1999999999	PHPSESSID	n6gk52nurvp8qsqjm0695s56k1
+.bootstrapcdn.com	TRUE	/	FALSE	1999999999	__cfduid	d4231bc23d06a8ac77056c84f3837b5031616552395
+maxcdn.bootstrapcdn.com	TRUE	/	FALSE	1999999999	SameSite	Lax
+

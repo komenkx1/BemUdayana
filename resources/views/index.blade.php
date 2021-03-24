@@ -36,27 +36,35 @@
             <div class="row">
                 <div class="col-md-5 col-lg-4" style="z-index: 1;" data-aos="fade-up" data-aos-delay="300"
                     data-aos-duration="500">
-                    <form action="https://bemudayana.id/input_hotline.php" method="POST" class="getaquote-form">
+                    <form action="{{Route('hotline.store')}}" method="POST" class="getaquote-form">
+                        @csrf
                         <h3 style="font-family:museo700">Hotline Mahasiswa</h3>
                         <div class="wrap">
-
+                            @if(session()->has('success'))
+                            <div class='alert alert-success alert-dismissible fade show' role='alert'>
+                                <strong>Data disimpan!</strong> Aspirasi kawan-kawan akan dibahas pada sesi Hotline
+                                mahasiswa setiap hari <strong>rabu</strong> dan <strong>kamis</strong>.
+                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
+                                    <span aria-hidden='true'>&times;</span>
+                                </button>
+                            </div>
+                            @endif
                             <!--PHP Hotline Status-->
                             <!-- End of PHP Hotline Status-->
 
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Email, WA atau ID Line"
+                                <input required type="text" class="form-control" placeholder="Email, WA atau ID Line"
                                     name="email_ht">
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Nama" name="nama_ht">
+                                <input required type="text" class="form-control" placeholder="Nama" name="nama_ht">
                             </div>
                             <div class="form-group">
-                                <textarea cols="30" rows="7" class="form-control" placeholder="Pesan"
+                                <textarea required cols="30" rows="7" class="form-control" placeholder="Pesan"
                                     name="pesan_ht"></textarea>
                             </div>
                             <div class="form-group">
-                                <input type="submit" value="Kirim Pesan" class="btn btn-primary py-3 px-5"
-                                    name="submit">
+                                <button type="submit" class="btn btn-primary py-3 px-5">Kirim Pesan</button>
                             </div>
                         </div>
                     </form>
@@ -309,136 +317,36 @@ textColor: 'white'
  eventLimit: true, // allow "more" link when too many events
     selectable: true,
     selectHelper: true,
-select: function(start, end) {
-
-$('#ModalAdd #start').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
-$('#ModalAdd #end').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));
-$('#ModalAdd').modal('show');
-},
-eventRender: function(event, element) {
-element.bind('dblclick', function() {
-  $('#ModalEdit #id').val(event.id);
-  $('#ModalEdit #title').val(event.title);
-  $('#ModalEdit #color').val(event.color);
-  $('#ModalEdit #color').val(event.color);
-  $('#ModalEdit').modal('show');
-});
-},
-eventDrop: function(event, delta, revertFunc) { // si changement de position
-
-edit(event);
-
-},
-eventResize: function(event, dayDelta, minuteDelta, revertFunc) { // si changement de longueur
-
-edit(event);
-
-},
-//cara foreach js
-// events: [
-//     @foreach($posts as $post)
-//  {
-//     id: '72',
-//     title: 'df',
-//     start: '{{$post->ptime}}',
-//     end: '2020-10-01',
-//     color: '#FF0000',
-//   },
-//   @endforeach
- 
-//       ]
-// });
 
 events: [
- {
-    id: '72',
-    title: 'Grand Opening Dies Natalis ke-58 Universitas Udayana',
-    start: '2020-10-01',
-    end: '2020-10-01',
-    color: '#FF0000',
+
+    @foreach($events as $event)
+    @php
+    $start = explode(" ", $event->start);
+    $end = explode(" ", $event->start);
+    if ($start[1] == '00:00:00') {
+            $start = $start[0];
+          } else {
+            $start = $event['start'];
+          }
+          if ($end[1] == '00:00:00') {
+            $end = $end[0];
+          } else {
+            $end = $event['end'];
+          }
+    @endphp
+    {
+    id: '{{$event->id}}',
+    title: '{{$event->title}}',
+    start: '{{$event->start}}',
+    end: '{{$event->end}}',
+    color: '{{$event->color}}',
   },
- {
-    id: '73',
-    title: 'PMU Sesi 5',
-    start: '2020-12-06',
-    end: '2020-12-07',
-    color: '#FF0000',
-  },
- {
-    id: '74',
-    title: 'Udayana Charity Night',
-    start: '2020-11-14',
-    end: '2020-11-15',
-    color: '#0071c5',
-  },
- {
-    id: '75',
-    title: 'Sima Krama PM',
-    start: '2020-12-05',
-    end: '2020-12-06',
-    color: '#008000',
-  },
- {
-    id: '78',
-    title: 'Upgrading 1',
-    start: '2021-03-19',
-    end: '2021-03-21 23:59:00',
-    color: '#FFD700',
-  },
- {
-    id: '80',
-    title: 'SNMPTN',
-    start: '2021-03-22',
-    end: '2021-03-23',
-    color: '#40E0D0',
-  },
- {
-    id: '81',
-    title: 'FGD BEM PM',
-    start: '2021-03-07',
-    end: '2021-03-08',
-    color: '#FFD700',
-  },
- {
-    id: '83',
-    title: 'Student Day',
-    start: '2021-08-23',
-    end: '2021-08-25',
-    color: '#FFD700',
-  },
+  @endforeach
       ]
 });
 
-function edit(event) {
-start = event.start.format('YYYY-MM-DD HH:mm:ss');
-if (event.end) {
-end = event.end.format('YYYY-MM-DD HH:mm:ss');
-} else {
-end = start;
-}
 
-id = event.id;
-
-Event = [];
-Event[0] = id;
-Event[1] = start;
-Event[2] = end;
-
-$.ajax({
-url: 'editEventDate.php',
-type: "POST",
-data: {
-  Event: Event
-},
-success: function(rep) {
-  if (rep == 'OK') {
-    alert('Saved');
-  } else {
-    alert('Could not be saved. try again.');
-  }
-}
-});
-}
 
 });
 </script>

@@ -23,6 +23,7 @@ Route::get('/ukm', [MainController::class, 'ukm'])->name('ukm');
 Route::get('/ukm/detail/{ukm:slug}', [MainController::class, 'UkmDetail'])->name('ukm.detail');
 Route::get('/paguyuban', [MainController::class, 'paguyuban'])->name('paguyuban');
 Route::get('/paguyuban/detail/{paguyuban:slug}', [MainController::class, 'PaguyubanDetail'])->name('paguyuban.detail');
+Route::post('/hotline/store', [MainController::class, 'store'])->name('hotline.store');
 Route::view('/tentang', 'tentang')->name('tentang');
 Route::view('/kontak', 'contact')->name('kontak');
 Route::view('/asrama', 'asrama')->name('asrama');

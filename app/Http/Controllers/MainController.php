@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Events;
+use App\Models\Hotline;
 use App\Models\Post;
 use App\Models\LembagaMahasiswa;
 use App\Models\Proker;
@@ -19,7 +21,8 @@ class MainController extends Controller
     public function index()
     {
         $posts = Post::orderBy('pid', 'DESC')->paginate('3');
-        return view('index', compact('posts'));
+        $events = Events::get();
+        return view('index', compact('posts','events'));
     }
 
     public function blog()
@@ -86,7 +89,9 @@ class MainController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $hotline = $request->all();
+        Hotline::create($hotline);
+        return redirect()->back()->with('success','data berhasil disimpan');
     }
 
     /**

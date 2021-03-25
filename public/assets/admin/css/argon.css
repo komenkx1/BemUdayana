@@ -21404,6 +21404,10 @@ textarea[resize='horizontal']
     max-width: 100%;
     max-height: 3rem;
 }
+table#tbPengurus td {
+    word-break: break-word;
+  }
+  
 @media (min-width: 768px)
 {
     .navbar-vertical .navbar-collapse
@@ -23757,7 +23761,7 @@ textarea[resize='horizontal']
 {
     font-size: .8125rem;
 
-    white-space: nowrap;
+    /* white-space: nowrap; */
 }
 
 .table.align-items-center td,

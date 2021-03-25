@@ -1,4 +1,4 @@
-@extends('admin/layouts/master',['title'=>'Blog'])
+@extends('admin/layouts/master',['title'=>'Hotline'])
 @section('content')
 
 <!-- Modal -->
@@ -37,7 +37,7 @@
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
             <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
               <li class="breadcrumb-item"><a href="#"><i class="fas fa-home text-dark"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Blog</li>
+              <li class="breadcrumb-item active" aria-current="page">Hotline</li>
             </ol>
           </nav>
         </div>
@@ -54,20 +54,20 @@
         <div class="card-header bg-transparent">
           <div class="row align-items-center">
             <div class="col">
-              <h5 class="h3 mb-0">Blog Post List</h5>
+              <h5 class="h3 mb-0">Hotline List</h5>
             </div>
           </div>
         </div>
         <div class="card-body">
           <!-- Chart -->
-          <div class="table-responsive">
-            <table id="tbPengurus" class=" table align-items-center table-flush border-0">
+          <div class="table-responsive table">
+            <table id="tbPengurus" class=" datatable stripe align-items-center table-flush border-0">
               <thead class="thead-light">
                 <tr>
                   <th>No</th>
-                  <th>Judul</th>
-                  <th>Ringkasan</th>
-                  <th>Waktu</th>
+                  <th>Email | WA | Id Line</th>
+                  <th>Nama</th>
+                  <th>Pesan</th>
                   <th class="text-center">Action</th>
                 </tr>
               </thead>
@@ -76,16 +76,15 @@
                 @php
                 $no = 1;
                 @endphp
-                @foreach ($posts as $post)
+                @foreach ($hotlines as $hotline)
 
                 <tr>
                   <td>{{$no++}}</td>
-                  <td>{!! Str::limit($post->ptitle, 70) !!}</td>
-                  <td>{!! Str::limit($post->psumm, 70) !!}</td>
-                  <td>{{$post->ptime}}</td>
-                  <td class="text-center"><a href="{{Route('blog-admin.edit',['post'=>$post->pslug])}}"
-                      class="btn btn-sm btn-secondary">Edit</a><button class="btn btn-sm btn-danger trash"
-                      data-id="{{$post->pid}}" data-nama="{{$post->ptitle}}">Hapus</button></td>
+                  <td>{{$hotline->email_ht}}</td>
+                  <td>{{$hotline->nama_ht}}</td>
+                  <td>{{$hotline->pesan_ht}}</td>
+                  <td class="text-center"><button class="btn btn-sm btn-danger trash" data-id="{{$hotline->id}}"
+                      data-nama="{{$hotline->nama_ht}}">Hapus</button></td>
                 </tr>
 
                 @endforeach
@@ -109,11 +108,12 @@
      $('#DeletemodalForm').modal('show');
       var id = $(this).data('id');
       var nama = $(this).data('nama');
-      $('#formDelete').attr('action', '/admin/blog/destroy/' + id);
+      $('#formDelete').attr('action', '/admin/hotline/destroy/' + id);
     });
         $('#tbPengurus').DataTable({
+           "bAutoWidth": true,
            "columnDefs": [
-                { responsivePriority: 1, targets: 1 },
+                { responsivePriority: 1, targets: 2 },
                 { responsivePriority: 2, targets: 4 },
                 { orderable: false, targets: 4}
             ],
@@ -130,32 +130,19 @@
             ],
             buttons: [
                 {
-                    text: 'Write Post',
-                    className: "btn btn-md btn-dark",
-                    action: function ( e, dt, node, config ) {
-                      window.location.href='{{Route("blog-admin.create")}}';
+                    extend: 'pdf',
+                    text: 'Export to pdf',
+                    title: 'Data Hotlines',
+                    className: "btn btn-md btn-success",
+                    filename: 'Data Hotline',
+                    exportOptions: {
+                        rows: {
+                            search: 'applied'
+                        },
+                        orthogonal: 'export',
+                        columns: [0, 1, 2,3]
                     }
                 },
-                // {
-                //     extend: 'excel',
-                //     text: 'Export to excel',
-                //     title: 'Data Semua Pengurus',
-                //     className: "btn btn-md btn-info",
-                //     filename: 'Export ALL - ' + d,
-                //     init: function(dt, node, config) {
-                //         $("#filter").on('change', function() {
-                //             config.filename = 'Pengurus ' + this.value + ' - ' + d;
-                //             config.title = 'Data Pengurus ' + this.value + ' - ' + d;
-                //         })
-                //     },
-                //     exportOptions: {
-                //         rows: {
-                //             search: 'applied'
-                //         },
-                //         orthogonal: 'export',
-                //         columns: [0, 1, 2]
-                //     }
-                // },
             ],
             initComplete: function() {
                 $('button.dt-button').removeClass('dt-button');

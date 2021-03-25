@@ -17,17 +17,17 @@
   <link rel="stylesheet" href="/assets/admin/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
   <!-- Page plugins -->
   <link href="/assets/admin/vendor/datatables/css/jquery.dataTables.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css" rel="stylesheet">
-    <link href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/responsive/2.2.6/css/responsive.dataTables.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/buttons/1.6.5/css/buttons.dataTables.min.css" rel="stylesheet">
+  <link href="https://cdn.datatables.net/select/1.3.1/css/select.dataTables.min.css" rel="stylesheet">
   <!-- fullcalendar -->
   <link rel="stylesheet" href="/assets/fullcalendar/dist/fullcalendar.min.css">
   <link rel="stylesheet" href="/assets/fullcalendar/dist/fullcalendar.print.min.css" media="print">
   <!-- Argon CSS -->
   <link rel="stylesheet" href="/assets/admin/css/argon.css?v=1.2.0" type="text/css">
 
-        <!-- CKEditor (important)-->
-        <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
+  <!-- CKEditor (important)-->
+  <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
 </head>
 
 <body>

@@ -8,7 +8,9 @@
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
             <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
               <li class="breadcrumb-item"><a href="#"><i class="fas fa-home text-dark"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Blog</li>
+              <li class="breadcrumb-item" aria-current="page"><a href="{{Route('blog-admin')}}"
+                  class="text-dark">Blog</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Tulis Postingan</li>
             </ol>
           </nav>
         </div>
@@ -42,7 +44,10 @@
               </div>
               <div class="form-input mt-2">
                 <label for="Thumbnail">Thumbnail</label>
-                <input type="file" class="form-control" placeholder="Masukan File" required>
+                <input type="file" class="form-control" name="pimage" placeholder="Masukan File" required>
+                @if ($errors->has('pimage'))
+                <span class="text-danger">{{ $errors->first('pimage') }}</span>
+                @endif
               </div>
               <div class="form-input mt-2">
                 <label for="Content">Content</label>

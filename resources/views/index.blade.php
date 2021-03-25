@@ -34,8 +34,7 @@
     <section class="ftco-section ftco-services">
         <div class="container">
             <div class="row">
-                <div class="col-md-5 col-lg-4" style="z-index: 1;" data-aos="fade-up" data-aos-delay="300"
-                    data-aos-duration="500">
+                <div class="col-md-5 col-lg-4 animate__animated animate__fadeInUp" style="z-index: 1;">
                     <form action="{{Route('hotline.store')}}" method="POST" class="getaquote-form">
                         @csrf
                         <h3 style="font-family:museo700">Hotline Mahasiswa</h3>
@@ -71,8 +70,7 @@
                 </div>
 
                 <!--COUNTER START-->
-                <div class="row col-md margincus" style="margin-top:-20px" data-aos="fade-left" data-aos-delay="300"
-                    data-aos-duration="500">
+                <div class="row col-md margincus animate__animated animate__fadeInLeft" style="margin-top:-20px">
                     <div class="col-1">
                     </div>
                     <div class="col-11 hotline">

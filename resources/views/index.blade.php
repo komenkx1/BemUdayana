@@ -252,10 +252,11 @@
     </div>
 </section>
 <!-- END BLOG -->
-<section style="margin-bottom: 50px" data-aos="fade-in" data-aos-easing="ease-in-sine">
+<section style="margin-bottom: 50px" data-aos="zoom-out-down">
     <div class="container card">
         <div id="calendar" class="col-centered p-5">
         </div>
+    </div>
 </section>
 <!-- JURNAL -->
 <section>

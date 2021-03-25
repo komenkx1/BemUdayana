@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\Admin\DashboardController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,15 @@ use App\Http\Controllers\MainController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard');
+Route::post('/event/store', [DashboardController::class, 'store'])->name('event.store');
+Route::put('/event/update/{event:id}', [DashboardController::class, 'update'])->name('event.update');
+Route::post('/event/update/edit-date', [DashboardController::class, 'updateEventDate'])->name('edit-date');
+
+Route::get('/admin/blog', [BlogController::class, 'index'])->name('blog-admin');
+Route::get('/admin/blog/create', [BlogController::class, 'create'])->name('blog-admin.create');
+Route::post('/admin/blog/store', [BlogController::class, 'store'])->name('blog-admin.store');
+
 
 Route::get('/',[MainController::class, 'index'])->name('home');
 Route::get('/blog',[MainController::class, 'blog'])->name('blog');

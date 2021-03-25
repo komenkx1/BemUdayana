@@ -12,7 +12,7 @@
     <meta content="Shreethemes" name="author" />
 
     <!-- favicon tab browser -->
-    <link rel="shortcut icon" href="bem_images/icon.png">
+    <link rel="shortcut icon" href="/assets/bem_images/icon.png">
 
     <!-- Bootstrap -->
     <link href="/assets/bem_css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
@@ -182,6 +182,7 @@
 
 
      <script src="/assets/moment/moment.js"></script>
+     
      <script>
         AOS.init();
       </script>

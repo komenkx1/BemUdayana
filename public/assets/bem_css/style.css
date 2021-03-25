@@ -2353,7 +2353,9 @@ p {
 #topnav .has-submenu.active.active .menu-arrow {
   border-color: #f5c266;
 }
-
+.fc-time{
+  display: none!important;
+}
 #topnav .has-submenu {
   position: relative;
 }

@@ -262,7 +262,7 @@
     <div class="container" data-aos="zoom-out-down">
         <div class="row" style=" margin-bottom: 100px">
             <div class="col-lg-5 col-md-5 col-12">
-                <img class="image-jurnal" src="/assets/bem_images/jurnal.png" width="400px">
+                <img class="image-jurnal" src="{{$jurnal->image}}" width="400px">
             </div>
             <div class="col-lg-7 col-md-7 col-12" style="margin-top: 50px">
                 <h2 class="display-4 museo">{{$jurnal->title}}</h2>

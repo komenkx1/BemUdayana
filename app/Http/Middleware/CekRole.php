@@ -20,7 +20,7 @@ class CekRole
         if (in_array($request->user()->role,$roles)) {
             return $next($request);
             }
-            return redirect()->back()->with('denied','anda tak berhak masuk kehalaman ini!');
+            return redirect()->back()->with('danger','anda tak berhak masuk kehalaman ini!');
     }
 
    

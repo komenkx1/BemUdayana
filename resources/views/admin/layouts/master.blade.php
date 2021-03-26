@@ -70,6 +70,29 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Alert!</h4>
+            <hr>
+          </div>
+          <div class="modal-body">
+
+            @if ($message = Session::get('danger'))
+            <strong>{{ $message }}</strong>
+            @endif
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+
+      </div>
+    </div>
   </div>
   <!-- Argon Scripts -->
   <!-- Core -->
@@ -104,6 +127,10 @@
                 $(this).addClass("active");
             }
         });
+
+        @if ($message = Session::get('danger'))
+        $('#myModal').modal("show");
+@endif
   </script>
   @yield('footer')
 </body>

@@ -69,8 +69,8 @@ class RegisterController extends Controller
         }
 
         return $request->wantsJson()
-                    ? new JsonResponse([], 201)
-                    : redirect($this->redirectPath());
+            ? new JsonResponse([], 201)
+            : redirect('/login')->with('success', 'Berhasil Melakukan Pendaftaran. Silahkan Tunggu Admin Memverifikasi Akun Anda!');
     }
     /**
      * Create a new user instance after a valid registration.

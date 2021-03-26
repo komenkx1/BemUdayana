@@ -6,6 +6,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HotlineController;
 use App\Http\Controllers\Admin\JurnalController;
+use App\Http\Controllers\Admin\UserController;
 use App\Models\Hotline;
 
 /*
@@ -36,9 +37,9 @@ Route::post('/event/update/edit-date', [DashboardController::class, 'updateEvent
 
 // route role
 Route::group(['middleware' => ['auth','roles:super admin']], function () {
-    Route::get('/admin/user', [BlogController::class, 'index'])->name('user');
-    Route::put('/admin/user/verif/{user:id}', [BlogController::class, 'verif'])->name('user.update');
-    Route::delete('/admin/user/destroy/{user:id}', [BlogController::class, 'destroy'])->name('user.destroy');
+    Route::get('/admin/user', [UserController::class, 'index'])->name('user');
+    Route::put('/admin/user/verif/{user:id}', [UserController::class, 'verif'])->name('user.verif');
+    Route::delete('/admin/user/destroy/{user:id}', [UserController::class, 'destroy'])->name('user.destroy');
 });
 
 //blog

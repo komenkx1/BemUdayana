@@ -37,7 +37,7 @@
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
             <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
               <li class="breadcrumb-item"><a href="/"><i class="fas fa-home text-dark"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Jurnal</li>
+              <li class="breadcrumb-item active" aria-current="page">User</li>
             </ol>
           </nav>
         </div>
@@ -54,7 +54,7 @@
         <div class="card-header bg-transparent">
           <div class="row align-items-center">
             <div class="col">
-              <h5 class="h3 mb-0">Jurnal List</h5>
+              <h5 class="h3 mb-0">User List</h5>
             </div>
           </div>
         </div>
@@ -65,11 +65,10 @@
               <thead class="thead-light">
                 <tr>
                   <th>No</th>
-                  <th>Judul</th>
-                  <th>Volume</th>
-                  <th>Ringkasan</th>
+                  <th>Nama</th>
+                  <th>Username</th>
                   <th>Status</th>
-                  <th>Link</th>
+                  <th>Role</th>
                   <th class="text-center">Action</th>
                 </tr>
               </thead>
@@ -78,28 +77,30 @@
                 @php
                 $no = 1;
                 @endphp
-                @foreach ($jurnals as $jurnal)
+                @foreach ($users as $user)
 
                 <tr>
                   <td>{{$no++}}</td>
-                  <td>{!! Str::limit($jurnal->title, 30) !!}</td>
-                  <td>{{$jurnal->volume}}</td>
-                  <td>{!! Str::limit($jurnal->ringkasan, 30) !!}</td>
-                  <td>{{$jurnal->status}}</td>
-                  <td><a href="{{$jurnal->link}}" target="blank">{!! Str::limit($jurnal->link, 30) !!}</a></td>
+                  <td>{{$user->name}}</td>
+                  <td>{{$user->username}}</td>
+                  <td>{{$user->status}}</td>
+                  <td>{{$user->role}}</td>
+                  
                   <td class="text-center d-lg-flex justify-content-center">
-                    <form class="submit-form{{$jurnal->id}}"
-                      action="@if($jurnal->status == 'active') {{ Route('jurnal.nonaktif',['jurnal'=>$jurnal->id]) }} @else {{ Route('jurnal.active',['jurnal'=>$jurnal->id]) }} @endif"
+                      @if ($user->status != 'terverifikasi')
+
+                    <form class="submit-form{{$user->id}}"
+                      action="{{ Route('user.verif',['user'=>$user->id]) }} "
                       method="POST">
                       @csrf
                       @method('PUT')
-                      <button type="submit" class="btn btn-sm btn-success mr-2">@if($jurnal->status == 'active')
-                        Nonaktif
-                        @else Active @endif </button>
+                      <button type="submit" class="btn btn-sm btn-success mr-2">Verifikasi  </button>
                     </form>
-                    <button class="btn btn-sm btn-danger trash" data-id="{{$jurnal->id}}"
-                      data-nama="{{$jurnal->title}}">Hapus</button>
-                    <a href="{{Route('jurnal.edit',['jurnal'=>$jurnal->id])}}" class="btn btn-sm btn-warning">Edit</a>
+                                              
+                    @endif
+                    <button class="btn btn-sm btn-danger trash" data-id="{{$user->id}}"
+                      data-nama="{{$user->title}}">Hapus</button>
+                   
                   </td>
 
                 </tr>
@@ -125,7 +126,7 @@
      $('#DeletemodalForm').modal('show');
       var id = $(this).data('id');
       var nama = $(this).data('nama');
-      $('#formDelete').attr('action', '/admin/jurnal/destroy/' + id);
+      $('#formDelete').attr('action', '/admin/user/destroy/' + id);
     });
         $('#tbPengurus').DataTable({
            "bAutoWidth": true,
@@ -147,13 +148,7 @@
             ],
             buttons: [
               
-                {
-                    text: 'Tambah Jurnal',
-                    className: "btn btn-md btn-dark",
-                    action: function ( e, dt, node, config ) {
-                      window.location.href='{{Route("jurnal.create")}}';
-                    }
-                },
+                
             ],
             initComplete: function() {
                 $('button.dt-button').removeClass('dt-button');

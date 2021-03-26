@@ -35,14 +35,18 @@
               <span class="nav-link-text">Jurnal</span>
             </a>
           </li>
+          @if (Auth::user()->role == 'super admin')
+
           <li class="nav-item">
-            <a class="nav-link" href="{{Route('jurnal')}}">
+            <a class="nav-link" href="{{Route('user')}}">
               <i class="ni ni-single-02 text-orange"></i>
               <span class="nav-link-text">User</span>
             </a>
           </li>
+
+          @endif
         </ul>
-        
+
       </div>
     </div>
   </div>

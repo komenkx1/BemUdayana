@@ -1,35 +1,6 @@
-@extends('admin/layouts/master',['title'=>'Jurnal'])
+@extends('admin/layouts/master',['title'=>'Profile'])
 @section('content')
 
-<!-- Modal -->
-<div class="modal fade" id="DeletemodalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 id="myModalLabel">Delete Confirmation</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <p class="error-text">
-                    <i class="fa fa-warning modal-icon"></i>
-                    apakah anda yakin ingin menghapus item ini?
-                </p>
-            </div>
-            <div class="modal-footer">
-                <form id="formDelete" action="#" method="post">
-                    @method('delete')
-                    @csrf
-                    <button class="btn btn-default modal-dismiss" data-dismiss="modal"
-                        aria-hidden="true">Cancel</button>
-                    <button type="submit" class="btn btn-danger">Hapus</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
 <div class="header bg-yellow pb-6">
     <div class="container-fluid">
         <div class="header-body">
@@ -38,7 +9,7 @@
                     <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
                         <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                             <li class="breadcrumb-item"><a href="/"><i class="fas fa-home text-dark"></i></a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Jurnal</li>
+                            <li class="breadcrumb-item active" aria-current="page">Profile</li>
                         </ol>
                     </nav>
                 </div>

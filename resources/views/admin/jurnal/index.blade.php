@@ -1,4 +1,4 @@
-@extends('admin/layouts/master',['title'=>'Hotline'])
+@extends('admin/layouts/master',['title'=>'Jurnal'])
 @section('content')
 
 <!-- Modal -->
@@ -37,7 +37,7 @@
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
             <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
               <li class="breadcrumb-item"><a href="/"><i class="fas fa-home text-dark"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">Hotline</li>
+              <li class="breadcrumb-item active" aria-current="page">Jurnal</li>
             </ol>
           </nav>
         </div>
@@ -54,7 +54,7 @@
         <div class="card-header bg-transparent">
           <div class="row align-items-center">
             <div class="col">
-              <h5 class="h3 mb-0">Hotline List</h5>
+              <h5 class="h3 mb-0">Jurnal List</h5>
             </div>
           </div>
         </div>
@@ -65,9 +65,11 @@
               <thead class="thead-light">
                 <tr>
                   <th>No</th>
-                  <th>Email | WA | Id Line</th>
-                  <th>Nama</th>
-                  <th>Pesan</th>
+                  <th>Judul</th>
+                  <th>Volume</th>
+                  <th>Ringkasan</th>
+                  <th>Status</th>
+                  <th>Link</th>
                   <th class="text-center">Action</th>
                 </tr>
               </thead>
@@ -76,15 +78,30 @@
                 @php
                 $no = 1;
                 @endphp
-                @foreach ($hotlines as $hotline)
+                @foreach ($jurnals as $jurnal)
 
                 <tr>
                   <td>{{$no++}}</td>
-                  <td>{{$hotline->email_ht}}</td>
-                  <td>{{$hotline->nama_ht}}</td>
-                  <td>{{$hotline->pesan_ht}}</td>
-                  <td class="text-center"><button class="btn btn-sm btn-danger trash" data-id="{{$hotline->id}}"
-                      data-nama="{{$hotline->nama_ht}}">Hapus</button></td>
+                  <td>{!! Str::limit($jurnal->title, 30) !!}</td>
+                  <td>{{$jurnal->volume}}</td>
+                  <td>{!! Str::limit($jurnal->ringkasan, 30) !!}</td>
+                  <td>{{$jurnal->status}}</td>
+                  <td><a href="{{$jurnal->link}}" target="blank">{!! Str::limit($jurnal->link, 30) !!}</a></td>
+                  <td class="text-center d-flex justify-content-center">
+                    <form class="submit-form{{$jurnal->id}}"
+                      action="@if($jurnal->status == 'active') {{ Route('jurnal.nonaktif',['jurnal'=>$jurnal->id]) }} @else {{ Route('jurnal.active',['jurnal'=>$jurnal->id]) }} @endif"
+                      method="POST">
+                      @csrf
+                      @method('PUT')
+                      <button type="submit" class="btn btn-sm btn-success mr-2">@if($jurnal->status == 'active')
+                        Nonaktif
+                        @else Active @endif </button>
+                    </form>
+                    <button class="btn btn-sm btn-danger trash" data-id="{{$jurnal->id}}"
+                      data-nama="{{$jurnal->title}}">Hapus</button>
+                    <a href="{{Route('jurnal.edit',['jurnal'=>$jurnal->id])}}" class="btn btn-sm btn-warning">Edit</a>
+                  </td>
+
                 </tr>
 
                 @endforeach
@@ -108,7 +125,7 @@
      $('#DeletemodalForm').modal('show');
       var id = $(this).data('id');
       var nama = $(this).data('nama');
-      $('#formDelete').attr('action', '/admin/hotline/destroy/' + id);
+      $('#formDelete').attr('action', '/admin/jurnal/destroy/' + id);
     });
         $('#tbPengurus').DataTable({
            "bAutoWidth": true,
@@ -129,18 +146,12 @@
                 [10, 25, 50, 100, "All"]
             ],
             buttons: [
+              
                 {
-                    extend: 'pdf',
-                    text: 'Export to pdf',
-                    title: 'Data Hotlines',
-                    className: "btn btn-md btn-success",
-                    filename: 'Data Hotline',
-                    exportOptions: {
-                        rows: {
-                            search: 'applied'
-                        },
-                        orthogonal: 'export',
-                        columns: [0, 1, 2,3]
+                    text: 'Tambah Jurnal',
+                    className: "btn btn-md btn-dark",
+                    action: function ( e, dt, node, config ) {
+                      window.location.href='{{Route("jurnal.create")}}';
                     }
                 },
             ],

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Events;
 use App\Models\Hotline;
+use App\Models\Jurnal;
 use App\Models\Post;
 use App\Models\LembagaMahasiswa;
 use App\Models\Proker;
@@ -20,9 +21,11 @@ class MainController extends Controller
      */
     public function index()
     {
+        $jurnal = Jurnal::where('status','active')->get()->first();
+        // dd($jurnal);
         $posts = Post::orderBy('pid', 'DESC')->paginate('3');
         $events = Events::get();
-        return view('index', compact('posts','events'));
+        return view('index', compact('posts','events','jurnal'));
     }
 
     public function blog()

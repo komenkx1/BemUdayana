@@ -257,6 +257,7 @@
     </div>
 </section>
 <!-- JURNAL -->
+@if($jurnal)
 <section>
     <div class="container" data-aos="zoom-out-down">
         <div class="row" style=" margin-bottom: 100px">
@@ -264,14 +265,10 @@
                 <img class="image-jurnal" src="/assets/bem_images/jurnal.png" width="400px">
             </div>
             <div class="col-lg-7 col-md-7 col-12" style="margin-top: 50px">
-                <h2 class="display-4 museo">Jurnal Reparasi</h2>
-                <h4 class="museo">Volume 2</h4>
-                <p>Tak terasa, kepengurusan Kabinet Reparasi Cita Udayana telah berjalan selama lebih dari enam bulan.
-                    Begitu banyak hal terjadi selama setengah tahun ke belakang. Seperti tinta, beragam peristiwa itu
-                    menorehkan warnanya masing-masing. Dengan senang hati kami persembahkan "anak kedua" kami. Hari ini,
-                    Jurnal Reparasi Volume 2 sudah bisa dinikmati. Penasaran dengan isinya? Yuk baca Jurnal Reparasi
-                    sekarang!</p>
-                <a href="https://issuu.com/bem_udayana/docs/jurnal_20reparasi_20-_20volume_20ii"
+                <h2 class="display-4 museo">{{$jurnal->title}}</h2>
+                <h4 class="museo">Volume {{$jurnal->volume}}</h4>
+                <p>{{$jurnal->ringkasan}}</p>
+                <a href="{{$jurnal->link}}"
                     class="video-play-icon watch text-light mb-2 btn btn-pills btn-light mb-2">Baca Disini</a>
             </div>
         </div>
@@ -279,7 +276,7 @@
     </div>
 </section>
 <!-- END JURNAL -->
-
+@endif
 <!-- PODCAST -->
 <section style="margin-bottom: 50px">
     <div class="container" data-aos="fade-right">

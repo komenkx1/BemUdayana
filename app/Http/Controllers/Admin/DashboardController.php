@@ -3,8 +3,12 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\Validator;
 use App\Models\Events;
+use App\Models\Post;
+use App\Models\User;
 
 class DashboardController extends Controller
 {
@@ -16,8 +20,11 @@ class DashboardController extends Controller
     public function index()
     {
         $events = Events::get();
-        return view('admin/dashboard',compact('events'));
+        $posts = Post::get();
+        $users = User::get();
+        return view('admin/dashboard', compact('events','posts','users'));
     }
+
 
     /**
      * Show the form for creating a new resource.
@@ -73,21 +80,39 @@ class DashboardController extends Controller
      */
     public function update(Request $request, Events $event)
     {
-        
-        if( $request->has('delete') ){
+
+        if ($request->has('delete')) {
             $event->delete();
-        }else{
-        $events = $request->all();
-        $event->update($events);
+        } else {
+            $events = $request->all();
+            $event->update($events);
         }
         return redirect()->back();
+    }
+
+    public function profile(Request $request, User $user)
+    {
+
+        // $users = $request->all();
+        $user->username = $request->username;
+
+        if ($request->password) {
+            if (Hash::check($request->password, $user->password)) {
+                $user->password = Hash::make($request->new_password);
+            } else {
+                return redirect()->back()->with('danger', 'Password Lama Salah');
+            }
+        }
+        // dd($request->new_password);
+        $user->update();
+        return redirect()->back()->with('success', 'profile telah diupdate');
     }
 
 
     public function updateEventDate(Request $request)
     {
-      $event  = $request->Event[0];
-      Events::where('id', $event)
+        $event  = $request->Event[0];
+        Events::where('id', $event)
             ->update([
                 'start' => $request->Event[1],
                 'end' => $request->Event[2],

@@ -21,10 +21,10 @@
                             aria-expanded="false">
                             <div class="media align-items-center">
                                 <span class="avatar avatar-sm rounded-circle">
-                                    <img alt="Image placeholder" src="/assets/admin/img/theme/team-4.jpg">
+                                    <i class="ni ni-bold-down"></i>
                                 </span>
                                 <div class="media-body  ml-2  d-none d-lg-block">
-                                    <span class="mb-0 text-sm text-dark font-weight-bold">John Snow</span>
+                                    <span class="mb-0 text-sm text-dark font-weight-bold">{{Auth::user()->username}}</span>
                                 </div>
                             </div>
                         </a>
@@ -32,27 +32,21 @@
                             <div class="dropdown-header noti-title">
                                 <h6 class="text-overflow m-0">Welcome!</h6>
                             </div>
-                            <a href="#!" class="dropdown-item">
+                            <a href="{{Route('profile')}}" class="dropdown-item">
                                 <i class="ni ni-single-02"></i>
                                 <span>My profile</span>
                             </a>
-                            <a href="#!" class="dropdown-item">
-                                <i class="ni ni-settings-gear-65"></i>
-                                <span>Settings</span>
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                                <i class="ni ni-calendar-grid-58"></i>
-                                <span>Activity</span>
-                            </a>
-                            <a href="#!" class="dropdown-item">
-                                <i class="ni ni-support-16"></i>
-                                <span>Support</span>
-                            </a>
+                          
                             <div class="dropdown-divider"></div>
-                            <a href="#!" class="dropdown-item">
+                            <a href="{{ route('logout') }}"
+                            onclick="event.preventDefault();
+                                          document.getElementById('logout-form').submit();" class="dropdown-item">
                                 <i class="ni ni-user-run"></i>
                                 <span>Logout</span>
                             </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
                         </div>
                     </li>
                 </ul>

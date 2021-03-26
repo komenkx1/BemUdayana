@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\HotlineController;
 use App\Http\Controllers\Admin\JurnalController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\PoadcastController;
+use Illuminate\Support\Facades\Auth;
 use App\Models\Hotline;
 
 /*
@@ -19,13 +21,13 @@ use App\Models\Hotline;
 | contains the "web" middleware group. Now create something great!
 |
 */
-//dashboard
 
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
-
+//dashboard
 Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard');
 
+//profile
 Route::put('/profile/update/{user:id}', [DashboardController::class, 'profile'])->name('profile.update');
 Route::view('/profile', 'admin/profile/index')->name('profile');
 
@@ -34,9 +36,9 @@ Route::post('/event/store', [DashboardController::class, 'store'])->name('event.
 Route::put('/event/update/{event:id}', [DashboardController::class, 'update'])->name('event.update');
 Route::post('/event/update/edit-date', [DashboardController::class, 'updateEventDate'])->name('edit-date');
 
-
 // route role
 Route::group(['middleware' => ['auth','roles:super admin']], function () {
+    //user verif
     Route::get('/admin/user', [UserController::class, 'index'])->name('user');
     Route::put('/admin/user/verif/{user:id}', [UserController::class, 'verif'])->name('user.verif');
     Route::delete('/admin/user/destroy/{user:id}', [UserController::class, 'destroy'])->name('user.destroy');
@@ -63,6 +65,17 @@ Route::put('/admin/jurnal/active/{jurnal:id}', [JurnalController::class, 'active
 Route::put('/admin/jurnal/nonaktif/{jurnal:id}', [JurnalController::class, 'nonaktif'])->name('jurnal.nonaktif');
 Route::put('/admin/jurnal/update/{jurnal:id}', [JurnalController::class, 'update'])->name('jurnal.update');
 Route::delete('/admin/jurnal/destroy/{jurnal:id}', [JurnalController::class, 'destroy'])->name('jurnal.destroy');
+
+//poadcast
+
+Route::get('/admin/poadcast', [PoadcastController::class, 'index'])->name('poadcast');
+Route::get('/admin/poadcast/create', [PoadcastController::class, 'create'])->name('poadcast.create');
+Route::get('/admin/poadcast/edit/{poadcast:id}', [PoadcastController::class, 'edit'])->name('poadcast.edit');
+Route::post('/admin/poadcast/store', [PoadcastController::class, 'store'])->name('poadcast.store');
+Route::put('/admin/poadcast/active/{poadcast:id}', [PoadcastController::class, 'active'])->name('poadcast.active');
+Route::put('/admin/poadcast/nonaktif/{poadcast:id}', [PoadcastController::class, 'nonaktif'])->name('poadcast.nonaktif');
+Route::put('/admin/poadcast/update/{poadcast:id}', [PoadcastController::class, 'update'])->name('poadcast.update');
+Route::delete('/admin/poadcast/destroy/{poadcast:id}', [PoadcastController::class, 'destroy'])->name('poadcast.destroy');
 });
 
 //lannding
@@ -81,5 +94,3 @@ Route::view('/kontak', 'contact')->name('kontak');
 Route::view('/asrama', 'asrama')->name('asrama');
 
 
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

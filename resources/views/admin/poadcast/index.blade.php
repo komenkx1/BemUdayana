@@ -1,4 +1,4 @@
-@extends('admin/layouts/master',['title'=>'User'])
+@extends('admin/layouts/master',['title'=>'Poadcast'])
 @section('content')
 
 <!-- Modal -->
@@ -37,7 +37,7 @@
           <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
             <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
               <li class="breadcrumb-item"><a href="/"><i class="fas fa-home text-dark"></i></a></li>
-              <li class="breadcrumb-item active" aria-current="page">User</li>
+              <li class="breadcrumb-item active" aria-current="page">Poadcast</li>
             </ol>
           </nav>
         </div>
@@ -54,7 +54,7 @@
         <div class="card-header bg-transparent">
           <div class="row align-items-center">
             <div class="col">
-              <h5 class="h3 mb-0">User List</h5>
+              <h5 class="h3 mb-0">Poadcast List</h5>
             </div>
           </div>
         </div>
@@ -65,10 +65,9 @@
               <thead class="thead-light">
                 <tr>
                   <th>No</th>
-                  <th>Nama</th>
-                  <th>Username</th>
+                  <th>Judul</th>
+                  <th>Link</th>
                   <th>Status</th>
-                  <th>Role</th>
                   <th class="text-center">Action</th>
                 </tr>
               </thead>
@@ -77,30 +76,26 @@
                 @php
                 $no = 1;
                 @endphp
-                @foreach ($users as $user)
+                @foreach ($poadcasts as $poadcast)
 
                 <tr>
                   <td>{{$no++}}</td>
-                  <td>{{$user->name}}</td>
-                  <td>{{$user->username}}</td>
-                  <td>{{$user->status}}</td>
-                  <td>{{$user->role}}</td>
-                  
+                  <td>{!! Str::limit($poadcast->title, 30) !!}</td>
+                  <td><a href="{{$poadcast->link}}" target="blank">{!! Str::limit($poadcast->link, 30) !!}</a></td>
+                  <td>{{$poadcast->status}}</td>
                   <td class="text-center d-lg-flex justify-content-center">
-                      @if ($user->status != 'terverifikasi')
-
-                    <form class="submit-form{{$user->id}}"
-                      action="{{ Route('user.verif',['user'=>$user->id]) }} "
+                    <form class="submit-form{{$poadcast->id}}"
+                      action="@if($poadcast->status == 'active') {{ Route('poadcast.nonaktif',['poadcast'=>$poadcast->id]) }} @else {{ Route('poadcast.active',['poadcast'=>$poadcast->id]) }} @endif"
                       method="POST">
                       @csrf
                       @method('PUT')
-                      <button type="submit" class="btn btn-sm btn-success mr-2">Verifikasi  </button>
+                      <button type="submit" class="btn btn-sm btn-success mr-2">@if($poadcast->status == 'active')
+                        Nonaktif
+                        @else Active @endif </button>
                     </form>
-                                              
-                    @endif
-                    <button class="btn btn-sm btn-danger trash" data-id="{{$user->id}}"
-                      data-nama="{{$user->title}}">Hapus</button>
-                   
+                    <button class="btn btn-sm btn-danger trash" data-id="{{$poadcast->id}}"
+                      data-nama="{{$poadcast->title}}">Hapus</button>
+                    <a href="{{Route('poadcast.edit',['poadcast'=>$poadcast->id])}}" class="btn btn-sm btn-warning">Edit</a>
                   </td>
 
                 </tr>
@@ -126,7 +121,7 @@
      $('#DeletemodalForm').modal('show');
       var id = $(this).data('id');
       var nama = $(this).data('nama');
-      $('#formDelete').attr('action', '/admin/user/destroy/' + id);
+      $('#formDelete').attr('action', '/admin/poadcast/destroy/' + id);
     });
         $('#tbPengurus').DataTable({
            "bAutoWidth": true,
@@ -148,7 +143,13 @@
             ],
             buttons: [
               
-                
+                {
+                    text: 'Tambah Poadcast',
+                    className: "btn btn-md btn-dark",
+                    action: function ( e, dt, node, config ) {
+                      window.location.href='{{Route("poadcast.create")}}';
+                    }
+                },
             ],
             initComplete: function() {
                 $('button.dt-button').removeClass('dt-button');

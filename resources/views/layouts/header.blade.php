@@ -5,7 +5,7 @@
 
         <!-- Logo container-->
         <div>
-            <a class="logo" href="bem_index.html">
+            <a class="logo" href="/">
                 <img src="/assets/bem_images/logo-light.png" class="l-dark" height="50" alt="">
                 <img src="/assets/bem_images/logo-dark.png" class="l-light" height="50" alt="">
             </a>

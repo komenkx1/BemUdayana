@@ -2,7 +2,7 @@
   <div class="scrollbar-inner">
     <!-- Brand -->
     <div class="sidenav-header  align-items-center">
-      <a class="navbar-brand" href="javascript:void(0)">
+      <a class="navbar-brand" href="/">
         <img src="/assets/bem_images/icon.png" class="navbar-brand-img" alt="...">
       </a>
     </div>
@@ -33,6 +33,12 @@
             <a class="nav-link" href="{{Route('jurnal')}}">
               <i class="ni ni-book-bookmark text-green"></i>
               <span class="nav-link-text">Jurnal</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{Route('poadcast')}}">
+              <i class="ni ni-sound-wave text-purple"></i>
+              <span class="nav-link-text">Poadcast</span>
             </a>
           </li>
           @if (Auth::user()->role == 'super admin')

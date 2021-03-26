@@ -59,7 +59,7 @@ class JurnalController extends Controller
             }
             Jurnal::create($jurnals);
         }
-        return redirect(Route('jurnal'))->with('success', 'Postingan Blog Berhasil Dibuat');
+        return redirect(Route('jurnal'))->with('success', 'Jurnal Berhasil Ditambahkan');
     }
 
     /**
@@ -100,7 +100,7 @@ class JurnalController extends Controller
         }
         $jurnal->status = 'active';
         $jurnal->update();
-        return redirect()->back()->with('info', 'Berhasi Mengupdate Status');
+        return redirect()->back()->with('info', 'Berhasil Mengupdate Status');
     }
     public function nonaktif(Request $request, jurnal $jurnal)
     {

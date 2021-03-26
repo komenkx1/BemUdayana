@@ -82,7 +82,7 @@
           </div>
           <div class="modal-body">
 
-            @if ($message = Session::get('danger'))
+            @if ($message = Session::get('denied'))
             <strong>{{ $message }}</strong>
             @endif
           </div>
@@ -128,7 +128,7 @@
             }
         });
 
-        @if ($message = Session::get('danger'))
+        @if ($message = Session::get('denied'))
         $('#myModal').modal("show");
 @endif
   </script>

@@ -10,6 +10,7 @@ use App\Models\LembagaMahasiswa;
 use App\Models\Proker;
 use App\Models\Ukm;
 use App\Models\Paguyuban;
+use App\Models\Poadcast;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -22,10 +23,11 @@ class MainController extends Controller
     public function index()
     {
         $jurnal = Jurnal::where('status','active')->get()->first();
+        $poadcast = Poadcast::where('status','active')->get()->first();
         // dd($jurnal);
         $posts = Post::orderBy('pid', 'DESC')->paginate('3');
         $events = Events::get();
-        return view('index', compact('posts','events','jurnal'));
+        return view('index', compact('posts','events','jurnal','poadcast'));
     }
 
     public function blog()

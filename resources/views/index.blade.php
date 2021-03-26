@@ -278,6 +278,7 @@
 <!-- END JURNAL -->
 @endif
 <!-- PODCAST -->
+@if($poadcast)
 <section style="margin-bottom: 50px">
     <div class="container" data-aos="fade-right">
         <div class="row">
@@ -288,12 +289,13 @@
                     dunia mahasiswa maupun yang sedang terjadi diantara kita secara santai. Selamat mendengarkan.</p>
             </div>
             <div class="col-12" style="margin-bottom: 50px">
-                <iframe src="https://open.spotify.com/embed-podcast/episode/6eip9z7yL5Inhx8FwuNaUy" width="100%"
-                    height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                <iframe src="{{$poadcast->link}}" width="100%" height="232" frameborder="0" allowtransparency="true"
+                    allow="encrypted-media"></iframe>
             </div>
         </div>
     </div>
 </section>
+@endif
 <!-- END PODCAST -->
 
 @endsection

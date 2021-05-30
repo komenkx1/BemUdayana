@@ -1,53 +1,78 @@
 @extends('layouts/master',['title'=>'Lembaga Mahasiswa'])
 @section('content')
-<!-- Hero Start -->
-<section class="position-relative d-block vh-100" id="home">
-    <div class="slide-inner slide-bg-image d-flex align-items-center slider-lembaga"
-        style="background: center; height: 100%; background-color:#d7d3c1;">
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <div class="title-heading text-center">
-                        <p class="heading animate__animated animate__fadeInLeft" style="margin-top:60px">Lembaga
-                            Mahasiswa</p>
-                        <p class="heading animate__animated animate__fadeInLeft animate__slow">Universitas Udayana</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Hero End -->
 
-<!-- START LEMBAGA -->
-<section class="section" style="background-color: #E0E0E0;">
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center" style="background: url(assets/img/kertas.jpg) top center no-repeat;">
+
     <div class="container">
-        <div class="row card-lembaga" style="margin-top: -200px">
+      <div class="row">
+       
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up" class="text-100">Lembaga Mahasiswa</h1>
 
-
-            @foreach ($lembagas as $lembaga)
-            <div class="col-sm-3" data-aos="fade-up">
-                <a href="{{$lembaga->instagram_lembaga}}">
-                    <div
-                        class="mt-4 feature-transform text-center shadow position-relative d-block overflow-hidden bg-white rounded">
-                        <img src="{{$lembaga->image}}" class="img-fluid" alt="">
-                        <div class="content py-3">
-                            <p class="text-dark" style="font-weight: bold;">{{$lembaga->nama_lembaga}}</p>
-                            <p href="{{$lembaga->instagram_lembaga}}" class="text-primary read-more">Selengkapnya <i
-                                    class="mdi mdi-chevron-right"></i></p>
-                        </div>
-                    </div>
-                </a>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#lembaga"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Scroll Down</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
             </div>
-            <!--end col-->
+          </div>
+        </div>
+   
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
 
 
-            @endforeach
+
+    <!-- ======= Lembaga Section ======= -->
+    <section id="lembaga" class="itemCard">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Informasi</h2>
+          <p class="text-dark">Lembaga Mahasiswa</p>
+        </header>
+
+        <div class="row gy-4" data-aos="fade-left">
+            
+            @foreach ($lembagas as $lembaga)
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+              <a href="{{$lembaga->instagram_lembaga}}">
+            <div class="box">
+              <h3  class="fw-bold">{{$lembaga->nama_lembaga}}</h3>
+              <img src="{{$lembaga->image}}" class="img-fluid" alt="">
+             <p></p>
+             <a href="{{$lembaga->instagram_lembaga}}" class="btn btn-danger  readmore-blog "
+             style="background-color: hsl(1deg 76% 32%);">Selengkapnya</a>
+            </div>
+        </a>
+          </div>
+          @endforeach
+       
+          </div>
+
+          
 
         </div>
-        <!--end row-->
-    </div>
-    <!--end container-->
-</section>
+
+      </div>
+
+    </section>
+    <!-- End Lembaga Section -->
+
+   
+    <!-- END JURNAL -->
+
+
+  </main><!-- End #main -->
+
 <!-- END LEMBAGA -->
 @endsection

@@ -14,7 +14,7 @@
 <form class="form-signin" method="post" action="{{ route('login') }}">
     @csrf
       <div class="text-center mb-4">
-        <img class="mb-4" src="/assets/bem_images/icon.png" alt="" width="30%" height="30%">
+        <img class="mb-4" src="/assets/img/icon.png" alt="" width="30%" height="30%">
         <h1 class="h3 mb-3 font-weight-normal">Welcome to the Admin Page</h1>
         <p>"Bersama Ciptakan Karsa dalam Semangat Reparasi Cita untuk Udayana dan Indonesia"</p>
       </div>

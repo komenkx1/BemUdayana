@@ -3,7 +3,7 @@
     <!-- Brand -->
     <div class="sidenav-header  align-items-center">
       <a class="navbar-brand" href="/">
-        <img src="/assets/bem_images/icon.png" class="navbar-brand-img" alt="...">
+        <img src="/assets/img/icon.png" class="navbar-brand-img" alt="...">
       </a>
     </div>
     <div class="navbar-inner">

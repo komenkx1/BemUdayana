@@ -1,102 +1,78 @@
 @extends('layouts/master',['title'=>'Blog'])
 @section('content')
-<!-- START BLOG -->
 
-<!-- Hero Start -->
-<section class="swiper-slider-hero position-relative d-block vh-100" id="home">
-    <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
-        <div class="swiper-slide d-flex align-items-center overflow-hidden">
-            <div class="slide-inner slide-bg-image d-flex align-items-center"
-                style="background: url(/assets/mainpage/blog_images/red-bg.png) center center / cover; height: 100%;"
-                data-background="/assets/mainpage/blog_images/red-bg.png">
-                <div class="container">
-                    <div class="row pt-md-5 mt-lg-0">
-                        <div class="col-12">
-                            <div class="title-heading">
-                                <h1 href="#" class="typewrite heading text-white font-weight-bold mb-4 text-center"
-                                    data-period="2000"
-                                    data-type="[ &quot;Portal Informasi Kegiatan Kemahasiswaan.&quot;, &quot;Portal Perekrutan Terbuka.&quot;, &quot;BEM PM Universitas Udayana.&quot;, &quot;Reparasi Cita Udayana.&quot; ]">
-                                    <span class="wrap">Portal Perekrutan Terbuka.</span></h1>
-                                <!-- <h1 class="heading text-white font-weight-bold mb-4">Portal Informasi Berita, <br>Pengumuman serta Kegiatan Kemahasiswaan di Lingkungan Universitas Udayana</h1>
-                                        <p class="para-desc text-white-50">"Bersama Ciptakan Karsa dalam Semangat Reparasi Cita untuk Udayana dan Indonesia"</p> -->
-                            </div>
-                        </div>
-                        <!--end col-->
-                    </div>
-                    <!--end row-->
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Blog</li>
+        </ol>
+        <h2>Blog</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+       
+          <div class="col-lg-8 entries">
+            @if ($posts->count() == 0)
+            <div class="alert alert-danger" role="alert">
+              Artikel Tidak Ditemukan!
+            </div>
+            @endif
+            @foreach ($posts as $post)
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="{{$post->image}}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="{{Route('blog.detail',['blog'=>$post->pslug])}}">{{$post->ptitle}}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{Route('blog.detail',['blog'=>$post->pslug])}}">BEM PM UDAYANA</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{Route('blog.detail',['blog'=>$post->pslug])}}"><time datetime="{{date("Y-m-d",strtotime($post->ptime))}}">{{date("Y-m-d",strtotime($post->ptime))}}</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                <p>
+                 {{$post->psumm}}
+                </p>
+                <div class="read-more">
+                  <a href="{{Route('blog.detail',['blog'=>$post->pslug])}}">Read More</a>
                 </div>
-                <!--end container-->
+              </div>
 
-            </div> <!-- end swiper-slide -->
-            <!--end container-->
-        </div><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
-    </div>
-</section>
-<!-- Hero End -->
-<!-- Blog Content -->
-<!-- Page Content -->
-<div class="container">
-    <h1 class="my-4">Tulisan kami :</h1>
-    <div class="row">
-        @foreach ($posts as $post)
+            </article><!-- End blog entry -->
+            @endforeach
+          
 
-        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mb-4">
-            <a href="{{Route('blog.detail',['blog'=>$post->pslug])}}" class="text-dark read">
-                <div class="card h-100 blog-post shadow rounded position-relative overflow-hidden"
-                    style="background-color:white;">
-                    <div class="blog-img overflow-hidden position-relative">
-                        <img src="{{$post->image}}" class="img-fluid" alt="">
-                        <div class="overlay bg-dark"></div>
-                        <div class="d-flex author-desc align-items-center">
-                            <img src="/assets/bem_images/icon.png"
-                                class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
-                            <div class="author">
-                                <p class="text-white h6 name m-0">BEM PM Udayana</p>
-                                <p class="text-white-50 small mb-0">{{$post->ptime}}</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="position-relative">
-                        <div class="shape overflow-hidden text-white">
-                            <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="blog-content p-4">
-                        <h5 class="title text-dark">{{$post->ptitle}}</h5>
-                        <p class="text-muted item">{!!$post->psumm!!}</p>
+            <div class="text-center d-flex justify-content-center position-relative">
+                {{ $posts->onEachSide(5)->links() }}
+            </div>
 
-                        <div class="post-meta d-flex justify-content-between pt-3 border-top">
-                            Baca Selanjutnya &rarr;
-                        </div>
-                    </div>
-                </div>
-            </a>
-            <!--end post-->
+          </div><!-- End blog entries list -->
+
+          @include('layouts/sidebar')
+
         </div>
-        <!--end col-->
 
+      </div>
+    </section><!-- End Blog Section -->
 
-        @endforeach
-
-
-    </div>
-    <div class="text-center d-flex justify-content-center position-relative">
-        {{ $posts->onEachSide(5)->links() }}
-    </div>
-</div>
-
-
-
-<div class="clearfix">
-    <div class="float-left">
-
-    </div>
-    <div class="float-right">
-
-    </div>
-</div>
+  </main><!-- End #main -->
 @endsection
 @section('footer')
 

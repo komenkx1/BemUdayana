@@ -33,12 +33,24 @@ class MainController extends Controller
     public function blog()
     {
         $posts = Post::orderBy('pid', 'DESC')->paginate('3');
-        return view('blog', compact('posts'));
+        $postsRecent = Post::orderBy('pid', 'DESC')->paginate('4');
+        return view('blog', compact('posts','postsRecent'));
+    }
+    public function blogSearch(Request $request)
+    {
+        $cari = $request->cari;
+        $posts = Post::where('ptitle', 'like', '%'.$cari.'%')->paginate();
+        $postsRecent = Post::orderBy('pid', 'DESC')->paginate('4');
+        $count = count($posts);
+
+        return view('blog', compact('posts','postsRecent'));
+
     }
 
     public function BlogDetail(Post $blog)
     {
-        return view('detail-blog', compact('blog'));
+        $postsRecent = Post::orderBy('pid', 'DESC')->paginate('4');
+        return view('detail-blog', compact('blog','postsRecent'));
     }
 
     public function lembaga()

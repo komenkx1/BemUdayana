@@ -2,76 +2,80 @@
 @section('content')
 
 
-<!-- START BLOG -->
-<!-- Hero Start -->
-<section class="swiper-slider-hero position-relative d-block vh-100" id="home">
-    <div class="slide-inner slide-bg-image d-flex align-items-center"
-        style="background: center; background-size: cover ;height: 100%;"
-        data-background="/assets/bem_images/stickyNotes.jpg">
-        <div class="bg-overlay"></div>
-        <div class="container">
-            <div class="row pt-md-5 mt-lg-0">
-                <div class="col-12">
-                    <div class="title-heading">
-                        <h1 class="heading text-white font-weight-bold mb-4">{{$blog->ptitle}}</h1>
-                        <p class="para-desc text-white"><strong>Scroll ke bawah</strong> untuk membaca artikel</p>
-                    </div>
+<main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li><a href="{{Route('blog')}}">Blog</a></li>
+          <li>{{Str::limit($blog->ptitle,50)}}</li>
+        </ol>
+        <h2>{{Str::limit($blog->ptitle,50)}}</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Single Section ======= -->
+    <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry entry-single">
+
+              <div class="entry-img">
+                <img src="{{$blog->image}}" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="javascript:void(0)">{{$blog->ptitle}}</a>
+              </h2>
+
+              <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="javascript:void(0)">BEM PM UDAYANA</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="javascript:void(0)"><time datetime="{{date("Y-m-d",strtotime($blog->ptime))}}">{{date("Y-m-d",strtotime($blog->ptime))}}</time></a></li>
+                </ul>
+              </div>
+
+              <div class="entry-content">
+                {!!$blog->pbody!!}
+
+              </div>
+
+            
+
+            </article><!-- End blog entry -->
+
+            <div class="blog-author d-flex align-items-center">
+              <img src="/assets/img/icon.png" class=" float-left" alt="">
+              <div>
+                <h4>BEM PM UNUD</h4>
+                <div class="social-links">
+                  <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
+                  <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
+                  <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
                 </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </div><!-- end slide-inner -->
-    </div> <!-- end swiper-slide -->
+                <p>Badan Eksekutif Mahasiswa Pemerintahan mahasiswa Universitas Udayana</p>
+              </div>
+            </div><!-- End blog author bio -->
 
-    <!--end container-->
-</section>
-<!--end section-->
-<!-- Hero End -->
-<!-- Blog Content -->
 
-<!-- Page Content -->
-<div class="container vertical-center">
 
-    <div class="row">
+          </div><!-- End blog entries list -->
 
-        <!-- Post Content Column -->
-        <div class="col-lg-8">
-
-            <!-- Title -->
-            <h1 class="mt-4">{{$blog->ptitle}}</h1>
-
-            <!-- Author -->
-            <p class="lead">
-                by BEM PM Udayana
-            </p>
-
-            <hr>
-
-            <!-- Date/Time -->
-
-            <div>{{$blog->ptime}}</div>
-
-            <hr>
-
-            <!-- Preview Image -->
-            <img class="img-fluid rounded" src="{{$blog->image}}" alt="">
-
-            <hr>
-
-            <!-- Post Content -->
-            {!!$blog->pbody!!}
+          @include('layouts/sidebar')
 
         </div>
 
-    </div>
+      </div>
+    </section><!-- End Blog Single Section -->
 
-    <!-- /.row -->
-
-</div>
-<!-- /.container -->
-
-<!-- End Blog Content -->
+  </main><!-- End #main -->
 
 @endsection

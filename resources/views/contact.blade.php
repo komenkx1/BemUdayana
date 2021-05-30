@@ -1,156 +1,109 @@
-@extends('layouts/master',['title'=>'Program Kerja'])
+@extends('layouts/master',['title'=>'Contact us'])
 @section('content')
-<!-- Hero Start -->
-<section class="position-relative d-block vh-100" id="home">
-    <div class="slide-inner slide-bg-image d-flex align-items-center"
-        style="background: center; height: 100%; background-image: url('/assets/bem_images/slider/yellow-bg.png');">
-        <div class="container bem">
-            <div class="row mt-4">
-                <div class="col-md-8">
-                    <div class="title-heading">
-                        <p class="heading animate__animated animate__fadeInLeft" style="margin-top:60px">Kontak Kami</p>
-                        <p class="heading animate__animated animate__fadeInLeft animate__slow">BEM PM Udayana 2020</p>
-                        <p class="para-desc animate__animated animate__fadeInLeft animate__slower"
-                            style="color:#be5e53; font-family:photograph_signature; font-size:25px">"Bersama Ciptakan
-                            Karsa dalam Semangat Reparasi Cita untuk Udayana dan Indonesia"</p>
-                    </div>
-                </div>
+
+
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Kontak Kami</h1>
+
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#contact"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Scroll Down</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
             </div>
+          </div>
         </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/contact.png" class="img-fluid" alt="">
+        </div>
+      </div>
     </div>
-</section>
-<!-- Hero End -->
-<!-- Developer Team -->
-<div class="container mt-100 mt-60">
-    <div class="row justify-content-center">
-        <div class="col-12">
-            <div class="section-title text-center mb-4 pb-2">
-                <h6 data-aos="fade-up" class="text-muted">TEAM</h6>
-                <h2 data-aos="fade-up" class="mb-2">WEB DEVELOPER</h2>
-                <p data-aos="fade-up" class="text-muted para-desc mx-auto mb-0">Pembuatan dan Pemeliharaan Website BEM
-                    PM</p>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+<!-- ======= Team Section ======= -->
+<section id="contact" class="team">
+
+    <div class="container" data-aos="fade-up">
+
+      <header class="section-header">
+        <p class="text-dark">Narahubung</p>
+        <hr>
+      </header>
+      <div class="row gy-4">
+
+        <div class="col-lg-5 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/NGURAH.png" class="img-fluid" alt="">
+              <div class="social">
+                <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+              </div>
             </div>
+            <div class="member-info">
+                <h4>Ngurah Dinata</h4>
+                <span>Menteri Kominfo</span>
+            </div>
+          </div></div>
+      <div class="row gy-4">
+
+        <div class="col-lg-5 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/SHILTA.png" class="img-fluid" alt="">
+              <div class="social">
+                <a target="blank" href="https://wa.me/6289607817873"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/shilta_inda/"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Shilta Inda</h4>
+              <span>Web Developer</span>
+            </div>
+          </div>
         </div>
-        <!--end col-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="col-lg-5 mx-auto col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="member">
+            <div class="member-img">
+              <img src="assets/img/WAHYU.png" class="img-fluid" alt="">
+              <div class="social">
+                <a target="blank" href="https://wa.me/6288219157496"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/mangwahyu19/"><i class="bi bi-instagram"></i></a>
+              </div>
+            </div>
+            <div class="member-info">
+              <h4>Komang Wahyu</h4>
+              <span>Web Developer</span>
+            
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
     </div>
-    <!--end row-->
 
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-in-down">
-            <div class="team text-center rounded position-relative overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                    <img src="bem_images/tim/teguh.png" class="img-fluid" alt="">
-                    <ul class="list-unstyled team-social social-icon social mb-0 bg-dark pt-2">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/teguhst_/?hl=id"
-                                class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                    </ul>
-                    <!--end icon-->
-                </div>
-                <div class="content p-4" style="background-color: #d7d3c1">
-                    <h6 class="mb-0">TEGUH SATYA</h6>
-                </div>
-            </div>
-        </div>
+  </section><!-- End Team Section -->
+   
 
-        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-in-down">
-            <div class="team text-center rounded position-relative overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                    <img src="bem_images/tim/ngurah.png" class="img-fluid" alt="">
-                    <ul class="list-unstyled team-social social-icon social mb-0 bg-dark pt-2">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/ngurahdinataa/?hl=id"
-                                class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                    </ul>
-                    <!--end icon-->
-                </div>
-                <div class="content p-4" style="background-color: #d7d3c1">
-                    <h6 class="mb-0">NGURAH DINATA</h6>
-                </div>
-            </div>
-        </div>
 
-        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-in-down">
-            <div class="team text-center rounded position-relative overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                    <img src="bem_images/tim/shilta.png" class="img-fluid" alt="">
-                    <ul class="list-unstyled team-social social-icon social mb-0 bg-dark pt-2">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/shilta_inda/?hl=id"
-                                class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                    </ul>
-                    <!--end icon-->
-                </div>
-                <div class="content p-4" style="background-color: #d7d3c1">
-                    <h6 class="mb-0">SHILTA INDA</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Developer Team -->
-
-<!-- HJP Team -->
-<div class="container mt-100 mt-60">
-    <div class="row justify-content-center">
-        <div class="col-12">
-            <div class="section-title text-center mb-4 pb-2">
-                <h6 class="text-muted" data-aos="fade-up">TEAM</h6>
-                <h2 data-aos="fade-up" class="mb-2">HUMAS PUBLIKASI JARINGAN</h2>
-                <p data-aos="fade-up" class="text-muted para-desc mx-auto mb-0">Penulisan Blog dan Informasi Pada
-                    Website BEM PM</p>
-            </div>
-        </div>
-        <!--end col-->
-    </div>
-    <!--end row-->
-
-    <div class="row">
-        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-in-down">
-            <div class="team text-center rounded position-relative overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                    <img src="bem_images/tim/laksmi.png" class="img-fluid" alt="">
-                    <ul class="list-unstyled team-social social-icon social mb-0 bg-dark pt-2">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/laksmianandad/?hl=id"
-                                class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                    </ul>
-                    <!--end icon-->
-                </div>
-                <div class="content p-4" style="background-color: #d7d3c1">
-                    <h6 class="mb-0">LAKSMI ANANDA</h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-in-down">
-            <div class="team text-center rounded position-relative overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                    <img src="bem_images/tim/audy.png" class="img-fluid" alt="">
-                    <ul class="list-unstyled team-social social-icon social mb-0 bg-dark pt-2">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/audybaiqhaq/?hl=id"
-                                class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                    </ul>
-                    <!--end icon-->
-                </div>
-                <div class="content p-4" style="background-color: #d7d3c1">
-                    <h6 class="mb-0">AUDY BAIQHAQ</h6>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2" data-aos="zoom-in-down">
-            <div class="team text-center rounded position-relative overflow-hidden">
-                <div class="position-relative overflow-hidden">
-                    <img src="bem_images/tim/mirah.png" class="img-fluid" alt="">
-                    <ul class="list-unstyled team-social social-icon social mb-0 bg-dark pt-2">
-                        <li class="list-inline-item"><a href="https://www.instagram.com/idaayumirahp/?hl=id"
-                                class="rounded"><i data-feather="instagram" class="fea icon-sm fea-social"></i></a></li>
-                    </ul>
-                    <!--end icon-->
-                </div>
-                <div class="content p-4" style="background-color: #d7d3c1">
-                    <h6 class="mb-0">DAYU MIRAH</h6>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- HJP Team -->
+  </main><!-- End #main -->
 @endsection

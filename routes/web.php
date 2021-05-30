@@ -82,6 +82,7 @@ Route::delete('/admin/poadcast/destroy/{poadcast:id}', [PoadcastController::clas
 Route::get('/', [MainController::class, 'index'])->name('home');
 Route::get('/blog', [MainController::class, 'blog'])->name('blog');
 Route::get('/blog/detail/{blog:pslug}', [MainController::class, 'BlogDetail'])->name('blog.detail');
+Route::get('/blog/search', [MainController::class, 'blogSearch'])->name('blog.search');
 Route::get('/program-kerja', [MainController::class, 'proker'])->name('program-kerja');
 Route::get('/lembaga-mahasiswa', [MainController::class, 'lembaga'])->name('lembaga-mahasiswa');
 Route::get('/ukm', [MainController::class, 'ukm'])->name('ukm');

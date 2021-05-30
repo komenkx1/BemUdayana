@@ -28,6 +28,7 @@
 
   <!-- CKEditor (important)-->
   <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
+  
 </head>
 
 <body>
@@ -115,6 +116,7 @@
   <!-- Argon JS -->
   <script src="/assets/admin/js/argon.js?v=1.2.0"></script>
   <script>
+ 
     $.ajaxSetup({
   headers: {
     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')

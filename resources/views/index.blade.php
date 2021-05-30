@@ -1,381 +1,658 @@
-@extends('layouts/master',['title'=>'BEM PM UDAYANA'])
+@extends('layouts/master',['title'=>'BEM PM UDAYANA - Integrasi Karya'])
 @section('content')
 
-<!-- Hero Start -->
-<section class="position-relative d-block vh-100" id="home">
-    <div class="slide-inner slide-bg-image d-flex align-items-center"
-        style="background: center; height: 100%; background-color:#d7d3c1;">
-        <div class="container bem">
-            <div class="row mt-4">
-                <div class="col-md-8">
-                    <div class="title-heading">
-                        <p class="heading animate__animated animate__fadeInLeft" style="margin-top:60px">Badan Eksekutif
-                            Mahasiswa (BEM)</p>
-                        <p class="heading animate__animated animate__fadeInLeft animate__slow">Pemerintahan Mahasiswa
-                        </p>
-                        <p class="heading animate__animated animate__fadeInLeft animate__slower">Universitas Udayana
-                            2020</p>
-                        <p class="para-desc" style="color:#be5e53; font-family:photograph_signature; font-size:25px">
-                            "Bersama Ciptakan Karsa dalam Semangat Reparasi Cita untuk Udayana dan Indonesia"</p>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="fade-down" data-aos-easing="ease-in-sine" data-aos-delay="300"
-                    data-aos-duration="1000">
-                    <img src="/assets/bem_images/a1.png" width="100%" class="align-items-center">
-                </div>
+
+
+
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up">Badan Eksekutif Mahasiswa (BEM)
+
+            Pemerintahan Mahasiswa
+
+            Universitas Udayana 2020</h1>
+
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#about"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Scroll Down</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
             </div>
+          </div>
         </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="assets/img/a1.png" class="img-fluid" alt="">
+        </div>
+      </div>
     </div>
-</section>
-<!-- Hero End -->
 
-<!-- HOTLINE MAHASISWA -->
-<div style="background-color: #d7d3c1;">
-    <section class="ftco-section ftco-services">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-lg-4 animate__animated animate__fadeInUp" style="z-index: 1;">
-                    <form action="{{Route('hotline.store')}}" method="POST" class="getaquote-form">
-                        @csrf
-                        <h3 style="font-family:museo700">Hotline Mahasiswa</h3>
-                        <div class="wrap">
-                            @if(session()->has('success'))
-                            <div class='alert alert-success alert-dismissible fade show' role='alert'>
-                                <strong>Data disimpan!</strong> Aspirasi kawan-kawan akan dibahas pada sesi Hotline
-                                mahasiswa setiap hari <strong>rabu</strong> dan <strong>kamis</strong>.
-                                <button type='button' class='close' data-dismiss='alert' aria-label='Close'>
-                                    <span aria-hidden='true'>&times;</span>
-                                </button>
-                            </div>
-                            @endif
-                            <!--PHP Hotline Status-->
-                            <!-- End of PHP Hotline Status-->
+  </section><!-- End Hero -->
 
-                            <div class="form-group">
-                                <input required type="text" class="form-control" placeholder="Email, WA atau ID Line"
-                                    name="email_ht">
-                            </div>
-                            <div class="form-group">
-                                <input required type="text" class="form-control" placeholder="Nama" name="nama_ht">
-                            </div>
-                            <div class="form-group">
-                                <textarea required cols="30" rows="7" class="form-control" placeholder="Pesan"
-                                    name="pesan_ht"></textarea>
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="btn btn-primary py-3 px-5">Kirim Pesan</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+  <main id="main">
 
-                <!--COUNTER START-->
-                <div class="row col-md margincus animate__animated animate__fadeInLeft" style="margin-top:-20px">
-                    <div class="col-1">
-                    </div>
-                    <div class="col-11 hotline">
-                        <p style=" font-family:museo700; color:#be5e53; font-size:50px;">#KuyTanyeAje</p>
-                        <p style="font-weight:bold;" class="hotline-desc">Hotline mahasiswa dibuka pada Hari Minggu dan
-                            Rabu. Selain lewat website, kalian juga bisa curhat lewat DM Instagram dan Line akun BEM PM
-                            Udayana dari pukul 17.00 sampai 19.00 WITA. Jangan lupa sertakan hastag #KuyTanyeAje ya!⁣⁣
-                        </p>
-                    </div>
-                </div>
+
+    <!-- ======= Positioning Section ======= -->
+    <section id="about" class="values">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Positioning</h2>
+          <p class="text-dark">BEM PM UDAYANA</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="box" data-aos="fade-up" data-aos-delay="200">
+              <img src="assets/img/Web-01.png" class="img-fluid" alt="">
+              <h3>PEMANTIK</h3>
+              <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
+                  Sebagai Pemantik</mark> adalah upaya BEM PM Udayana nantinya bisa menjadi inisiator dalam bergerak untuk mahasiswa dan masyarakat. Sesuai dengan narasi Integrasi atau pembaruan, adalah bagaimana BEM PM berupaya memantik iklim inklusif dan merangkul seluruh elemen mahasiswa Udayana.</p>
             </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0 ">
+            <div class="box" data-aos="fade-up" data-aos-delay="400">
+              <img src="assets/img/Web-02.png" class="img-fluid" alt="">
+              <h3>KALOBORATOR</h3>
+              <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
+                  Sebagai Kolaborator</mark> kami rasa salah satu solusi era VUCA (Vulnerable, Uncertainty, COmplexity, Ambiguity) saat ini perlu langkah-langkah kolaborsai dengan berbagai pihak. Karena BEM PM sedbagai wadah yang inklusif tetap memerlukan potensi ataupun partisipasi dari pihak lain untuk bergerak memberi kebermanfaatan secara bersama-sama.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 mt-4 mt-lg-0">
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+              <img src="assets/img/Web-03.png" class="img-fluid" alt="">
+              <h3>PARTISIPAN</h3>
+              <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
+                  Sebagai Partisipan</mark> BEM PM Udayana akan memposisikan diri untuk bisa turut serta berperan aktif dalam berbagai kegiatan baik dalam lingkup mahasiswa ataupun masyarakat. Pesan aktif ini sesuai dengan mini kami nomr 5, yaitu dalam aspek pengabdian dan pergerakan dengan berlandaskan nilai intelektual untuk memberi kontribusi nyata dan tepat sasaran.
+              </p>
+            </div>
+          </div>
+
         </div>
+
+      </div>
+
+
+
+
+      <!-- ======= Visi Misi Section ======= -->
+      <section id="VisiMisi" class="features p-0 p-lg-3">
+
+        <div class="container" data-aos="fade-up">
+
+
+          <!-- Feature Tabs -->
+          <div class="row feture-tabs mt-5" data-aos="fade-up">
+            <div class="col-lg-6">
+              <h3 style="color:hsl(1deg 76% 32%);">Visi & Misi</h3>
+              <h1 class="fw-bolder">Kabinet Integrasi Karya</h1>
+
+
+              <!-- Tabs -->
+              <ul class="nav nav-pills mb-3">
+                <li>
+                  <a class="nav-link active" data-bs-toggle="pill" href="#visi">Visi</a>
+                </li>
+                <li>
+                  <a class="nav-link" data-bs-toggle="pill" href="#misi">Misi</a>
+                </li>
+
+              </ul><!-- End Tabs -->
+
+              <!-- Tab Content -->
+              <div class="tab-content">
+
+                <div class="tab-pane fade show active" id="visi">
+                  <p>Integrasi Ragam Karya Guna Menjadikan BEM PM Universitas Udayana sebagai Wadah untuk Berkontribusi
+                    Aktif dalam Mewujudkan Kebermanfaatan bagi Udayana, Bali, dan Indonesia</p>
+
+                </div><!-- End Tab 1 Content -->
+
+                <div class="tab-pane fade show" id="misi">
+                  <div class="d-flex align-items-center mb-2 ">
+                    <i class="bi bi-check2"></i>
+                    <p>Harmonisasi internal BEM PM Universitas Udayana berlandaskan rasa empati dan kekeluargaan untuk
+                      mengoptimalkan kinerja yang terintegrasi secara digital dengan berbasis data dalam berkontribusi
+                      memberi kebermanfaatan.</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-2 ">
+                    <i class="bi bi-check2"></i>
+                    <p>Inisiator sinergi antar relasi internal maupun eksternal Udayana guna mengoptimalkan ragam karya
+                      dalam semangat kolaborasi yang inklusif dan strategis dengan berlandaskan Tri Dharma Perguruan
+                      Tinggi.</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-2 ">
+                    <i class="bi bi-check2"></i>
+                    <p>Optimalisasi potensi dan minat bakat sebagai upaya kaderisasi dan pengembangan sumber daya
+                      mahasiswa secara persisten untuk menciptakan iklim akademik maupun non akademik yang interaktif
+                      dan inovatif.</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-2 ">
+                    <i class="bi bi-check2"></i>
+                    <p>Menghadirkan wadah advokasi dan pelayanan kemahasiswaan yang adaptif, responsif, dan terintegrasi
+                      dalam memberi solusi bagi kesejahteraan mahasiswa.</p>
+                  </div>
+                  <div class="d-flex align-items-center mb-2 ">
+                    <i class="bi bi-check2"></i>
+                    <p>Bergerak dan mengabdi secara aktif, partisipatif, dan konsisten berlandaskan nilai intelektual
+                      untuk memberi kontribusi nyata dan tepat sasaran bagi masyarakat Bali dan Indonesia.</p>
+                  </div>
+                </div>
+
+                <!-- End Tab 2 Content -->
+
+
+              </div>
+
+            </div>
+
+            <div class="col-lg-6">
+              <img src="assets/img/aksi.jpg" class="img-fluid img-integrasi" alt="">
+            </div>
+
+          </div><!-- End Feature Tabs -->
+
+
+        </div>
+
+      </section><!-- End Visi Misi Section -->
+    </section><!-- End about Section -->
+
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="team" class="portfolio team m-0 p-3">
+      <!-- ======= Counts Section ======= -->
+      <section id="counts" class="counts  m-0 p-2">
+        <div class="container" data-aos="fade-up">
+
+          <div class="row gy-4">
+
+            <div class="col-lg-3 col-md-6">
+              <h1 class="fw-bold" style="color: hsl(1deg 76% 32%);">Jumlah Fungsionaris </h1>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+                <div>
+                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                  <p>Staff</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-people" style="color: #15be56;"></i>
+                <div>
+                  <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                  <p>Menteri & Wakil Menteri</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+              <div class="count-box">
+                <i class="bi bi-person-bounding-box" style="color: #bb0852;"></i>
+                <div>
+                  <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                    class="purecounter"></span>
+                  <p>Menteri Koordinator</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+      <!-- End Counts Section -->
+      <div class="container  mt-4" data-aos="fade-up">
+
+        <header class="section-header">
+          <p class="text-dark">Fungsionaris</p>
+        </header>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter=".filter-preswapres" class="filter-active">Presiden & Wakil Presiden</li>
+              <li data-filter=".filter-bph">BPH</li>
+              <li data-filter=".filter-rhh">RHH</li>
+              <li data-filter=".filter-ppm">PPM</li>
+              <li data-filter=".filter-pergerakan">Pergerakan</li>
+              <li data-filter=".filter-sosmas">Sosmas</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row gy-4 grid" data-aos="fade-up" data-aos-delay="200">
+
+
+          <div class="col-lg-3 col-md-6 grid-item filter-preswapres" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-preswapres" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- BPH -->
+          <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <!-- RHH -->
+          <div class="col-lg-12 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Sarah Jhonson</h4>
+                <span>Product Manager</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- End staff Section -->
+    <!-- ======= proker Section ======= -->
+    <!-- <section id="proker" class="services">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Program Kerja</h2>
+          <p>BEM PM UDAYANA 2021</p>
+        </header>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-box blue">
+              <img src="/assets/img/proker/trash-removebg-preview.png" alt="">
+              <h3>Nesciunt Mete</h3>
+              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-box orange">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Eosle Commodi</h3>
+              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-box green">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Ledo Markt</h3>
+              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-box red">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Asperiores Commodi</h3>
+              <p>Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-box purple">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Velit Doloremque.</h3>
+              <p>Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+            <div class="service-box pink">
+              <i class="ri-discuss-line icon"></i>
+              <h3>Dolori Architecto</h3>
+              <p>Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.</p>
+              <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section> -->
+    <!-- End proker Section -->
+
+
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Blog</h2>
+          <p class="text-dark">Terbaru</p>
+        </header>
+
+        <div class="row">
+            @foreach ($posts as $post)
+          <div class="col-lg-4  mb-4">
+            <div class="post-box">
+              <div class="post-img"><img src="{{$post->image}}" class="img-fluid" alt=""></div>
+              <span class="post-date"><i class="bi bi-clock"></i> {{date("Y-m-d",strtotime($post->ptime))}}</span>
+              <h3 class="post-title">{{Str::limit($post->ptitle,70)}}</h3>
+              <a href="{{Route('blog.detail',['blog'=>$post->pslug])}}" class="readmore stretched-link mt-auto text-dark"><span>Read More</span><i
+                  class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+@endforeach
+
+        </div>
+        <div class="btn-readmore text-center m-3">
+          <a href="{{Route("blog")}}" class="btn btn-danger  readmore-blog "
+            style="background-color: hsl(1deg 76% 32%);">Selengkapnya</a>
+        </div>
+
+      </div>
+
+    </section><!-- End Recent Blog Posts Section -->
+    <!-- JURNAL -->
+
+    <section id="podCastJurnal">
+        @if($jurnal)
+      <div class="container" data-aos="zoom-out-down">
+        <div class="row mb-5">
+          <div class="col-lg-5 col-md-5 col-12 text-center">
+            <img class="image-jurnal" src="{{$jurnal->image}}" width="400px">
+          </div>
+          <div class="col-lg-7 col-md-7 col-12" style="margin-top: 50px">
+            <h2 class="display-4 museo fw-bolder">{{$jurnal->title}}</h2>
+            <h4 class="museo fw-bold" style="color: hsl(1deg 76% 32%);">Volume {{$jurnal->volume}}</h4>
+            <p>{{$jurnal->ringkasan}}</p>
+            <a href="{{$jurnal->link}}"
+              class="btn btn-danger readmore-blog" style="background-color: hsl(1deg 76% 32%);">Baca Disini</a>
+          </div>
+        </div>
+
+      </div>
+      @endif
+      <!-- PODCAST -->
+      @if($poadcast)
+      <div class="container" data-aos="fade-right">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="display-4 museo fw-bolder">Udayana Podcast</h2>
+            <p style="margin-bottom: 30px">Sebuah persembahan dari BEM PM Udayana untuk kawan-kawan mahasiswa
+              Udayana. Di sini kita akan membawakan topik maupun isu yang sedang hangat diperbincangkan di seputar
+              dunia mahasiswa maupun yang sedang terjadi diantara kita secara santai. Selamat mendengarkan.</p>
+          </div>
+          <div class="col-12" style="margin-bottom: 50px">
+            <iframe src="{{$poadcast->link}}" width="100%"
+              height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          </div>
+        </div>
+      </div>
+      @endif
+      <!-- END PODCAST -->
     </section>
-</div>
-<!-- END HOTLINE MAHASISWA -->
-
-<!-- Start Features -->
-<section class="section">
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="section-title mb-4 pb-2">
-                    <h6 data-aos="fade-up" class="text-muted" style="font-family:museo700">Spirit Utama</h6>
-                    <p data-aos="fade-up" data-aos-delay="200" class="mb-2 reparasi"
-                        style="font-family:museo700; font-size: 30px">Reparasi Cita Udayana</p>
-                    <p data-aos="fade-up" data-aos-delay="400" class="mb-0"
-                        style="font-family:segoe script; font-size:14px">Cita Karsa, Ruang, dan Karya,
-                        Reparasi dari Udayana untuk Indonesia</p>
-                </div>
-            </div>
-            <!--end col-->
-        </div>
-        <!--end row-->
-
-        <div class="row">
-            <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"
-                class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature feature-transition p-4 py-5 shadow rounded text-center"
-                    style="background-color: #f3c066">
-                    <img src="/assets/bem_images/spirit/karsa.svg" class="avatar avatar-small" alt="">
-                    <h5 class="title mt-3 museo">Cita Karsa</h5>
-                    <p class="">BEM PM menjadi simbol adanya daya dan kekuatan jiwa yang mendorong elemen mahasiswa
-                        untuk berkehendak dan bergerak</p>
-                </div>
-            </div>
-            <!--end col-->
-
-            <div data-aos="fade-down" data-aos-duration="600" data-aos-delay="400"
-                class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature feature-transition p-4 py-5 shadow rounded text-center"
-                    style="background-color: #f3c066">
-                    <img src="/assets/bem_images/spirit/ruang.svg" class="avatar avatar-small" alt="">
-                    <h5 class="title mt-3 museo">Cita Ruang</h5>
-                    <p class="">BEM PM menjadi sebuah wadah untuk bertemu, saling betukar pikiran, dan memastikan ruang
-                        itu cukup nyaman menampung banyak entitas dan spektrum</p>
-                </div>
-            </div>
-            <!--end col-->
-
-            <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="400"
-                class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                <div class="feature feature-transition p-4 py-5 shadow rounded text-center"
-                    style="background-color: #f3c066">
-                    <img src="/assets/bem_images/spirit/karya.svg" class="avatar avatar-small" alt="">
-                    <h5 class="title mt-3 museo">Cita Karya</h5>
-                    <p class="">Menumbuhkan BEM PM sebagai<br> inisiator penciptaan hasil pemikiran<br>dalam bentuk
-                        karya<br>yang berkontrbusi nyata</p>
-                </div>
-            </div>
-            <!--end col-->
-        </div>
-        <!--end row-->
-    </div>
-    <!--end conatiner-->
-</section>
-<!--end section-->
-<!-- End Features -->
-
-<!-- VIDEO -->
-<section class="bg-half-170 bg-digital-marketing border-bottom d-table w-100">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <div class="title-kenal" data-aos="fade-in">
-                    <h2 class="kenal text-light mb-4 museo">Kenal Lebih Dekat.</h2>
-                    <p class="text-white-50 para-desc mb-0">Yuk kenalan lebih dekat dengan BEM PM Universitas Udayana
-                        Tahun 2020 di Kabinet Reparasi Cita, supaya bisa sama-sama menuju Udayana dan Indonesia yang
-                        lebih maju.</p>
-                </div>
-            </div>
-            <!--end col-->
-
-            <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0" data-aos="fade-in">
-                <div class="position-relative ml-lg-4">
-                    <img src="/assets/bem_images/dekat.jpg" class="img-fluid digital-hero rounded-pill" alt="">
-                    <div class="play-icon">
-                        <a href="https://www.youtube.com/watch?v=H-rNI1nr5vI" class="play-btn video-play-icon">
-                            <i class="mdi mdi-play mdi-24px text-primary rounded-circle bg-primary shadow"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <!--end col-->
-        </div>
-        <!--end row-->
-    </div>
-    <!--end container-->
-</section>
-<!--end section-->
-<div class="position-relative">
-    <div class="shape overflow-hidden text-white">
-        <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z" fill="currentColor"></path>
-        </svg>
-    </div>
-</div>
-<!-- VIDEO End -->
-<section>
-    <!-- START BLOG -->
-    <div class="jumbotron jumbotron-fluid" style="background-color: white">
-        <div class="container">
-            <h1 data-aos="fade-up" class="display-4" style="font-family:museo700">Blog Kami</h1>
-            <div class="row">
-                <div class="row">
-                    @foreach ($posts as $post)
-
-                    <div data-aos="fade-up" class="col-lg-4 col-md-6 col-12 mt-4 pt-2 mb-4">
-                        <a href="blogposts/single-pagefefb.html?slug=Info-KKN-PPM-Universitas-Udayana-Periode-XXII-Januari---Maret-2021"
-                            class="text-dark read">
-                            <div class="card h-100 blog-post shadow rounded position-relative overflow-hidden"
-                                style="background-color:white;">
-                                <div class="blog-img overflow-hidden position-relative">
-                                    <img src="{{$post->image}}" class="img-fluid" alt="">
-                                    <div class="overlay bg-dark"></div>
-                                    <div class="d-flex author-desc align-items-center">
-                                        <img src="/assets/bem_images/icon.png"
-                                            class="img-fluid avatar avatar-md-sm rounded-pill mr-2 shadow" alt="">
-                                        <div class="author">
-                                            <p class="text-white h6 name m-0">BEM PM Udayana</p>
-                                            <p class="text-white-50 small mb-0">{{$post->ptime}}</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="position-relative">
-                                    <div class="shape overflow-hidden text-white">
-                                        <svg viewBox="0 0 2880 250" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M720 125L2160 0H2880V250H0V125H720Z" fill="currentColor"></path>
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="blog-content p-4">
-                                    <h5 class="title text-dark">{{$post->ptitle}}</h5>
-                                    <p class="text-muted item">{!!$post->psumm!!}</p>
-
-                                    <div class="post-meta d-flex justify-content-between pt-3 border-top">
-                                        Baca Selanjutnya &rarr;
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                        <!--end post-->
-                    </div>
-                    <!--end col-->
+    <!-- END JURNAL -->
 
 
-                    @endforeach
-
-
-                </div>
-                <!--end col-->
-            </div>
-            <center data-aos="fade-in">
-                <a href="{{Route('blog')}}" class="btn btn-primary mt-4" style="text-align:center;">Lihat Blog
-                    Lainnya</a>
-            </center>
-        </div>
-    </div>
-</section>
-<!-- END BLOG -->
-<section style="margin-bottom: 50px" data-aos="zoom-out-down">
-    <div class="container card">
-        <div id="calendar" class="col-centered p-5">
-        </div>
-    </div>
-</section>
-<!-- JURNAL -->
-@if($jurnal)
-<section>
-    <div class="container" data-aos="zoom-out-down">
-        <div class="row" style=" margin-bottom: 100px">
-            <div class="col-lg-5 col-md-5 col-12">
-                <img class="image-jurnal" src="{{$jurnal->image}}" width="400px">
-            </div>
-            <div class="col-lg-7 col-md-7 col-12" style="margin-top: 50px">
-                <h2 class="display-4 museo">{{$jurnal->title}}</h2>
-                <h4 class="museo">Volume {{$jurnal->volume}}</h4>
-                <p>{{$jurnal->ringkasan}}</p>
-                <a href="{{$jurnal->link}}"
-                    class="video-play-icon watch text-light mb-2 btn btn-pills btn-light mb-2">Baca Disini</a>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!-- END JURNAL -->
-@endif
-<!-- PODCAST -->
-@if($poadcast)
-<section style="margin-bottom: 50px">
-    <div class="container" data-aos="fade-right">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="display-4 museo">Udayana Podcast</h2>
-                <p style="margin-bottom: 30px">Sebuah persembahan dari BEM PM Udayana untuk kawan-kawan mahasiswa
-                    Udayana. Di sini kita akan membawakan topik maupun isu yang sedang hangat diperbincangkan di seputar
-                    dunia mahasiswa maupun yang sedang terjadi diantara kita secara santai. Selamat mendengarkan.</p>
-            </div>
-            <div class="col-12" style="margin-bottom: 50px">
-                <iframe src="{{$poadcast->link}}" width="100%" height="232" frameborder="0" allowtransparency="true"
-                    allow="encrypted-media"></iframe>
-            </div>
-        </div>
-    </div>
-</section>
-@endif
-<!-- END PODCAST -->
-
-@endsection
-@section('footer')
-<script src="/assets/fullcalendar/dist/fullcalendar.min.js"></script>
-<script>
-    $(document).ready(function() {
-
-$('#calendar').fullCalendar({
-header: {
-left: 'prev,next today',
-center: 'title',
-right: 'month,basicWeek,basicDay',
-textColor: 'white'
-},
-
- eventLimit: true, // allow "more" link when too many events
-    selectable: true,
-    selectHelper: true,
-
-events: [
-
-    @foreach($events as $event)
-    @php
-    $start = explode(" ", $event->start);
-    $end = explode(" ", $event->start);
-    if ($start[1] == '00:00:00') {
-            $start = $start[0];
-          } else {
-            $start = $event['start'];
-          }
-          if ($end[1] == '00:00:00') {
-            $end = $end[0];
-          } else {
-            $end = $event['end'];
-          }
-    @endphp
-    {
-    id: '{{$event->id}}',
-    title: '{{$event->title}}',
-    start: '{{$event->start}}',
-    end: '{{$event->end}}',
-    color: '{{$event->color}}',
-  },
-  @endforeach
-      ]
-});
-
-
-
-});
-</script>
-<script>
-    $(function() {
- 
-         $('.item').each(function(event) {
-             var max_length = 100;
- 
-             if ($(this).html().length > max_length) {
- 
-                 var short_content = $(this).html().substr(0, max_length);
-                 var long_content = $(this).html().substr(max_length);
- 
-                 $(this).html(short_content +
-                     '<a href="#" class="read_more">...Read More</a>' +
-                     '<span class="more_text" style="display:none;">' + long_content + '</span>');
- 
-                 $(this).find('a.read_more').click(function(event) {
- 
-                     event.preventDefault();
-                     $(this).hide();
-                     $(this).parents('.item').find('.more_text').show();
- 
-                 });
- 
-             }
- 
-         });
- 
- 
-     });
-</script>
+  </main><!-- End #main -->
 @endsection

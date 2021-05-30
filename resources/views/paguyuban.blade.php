@@ -1,52 +1,72 @@
-@extends('layouts/master',['title'=>'Ukm'])
+@extends('layouts/master',['title'=>'Paguyuban Dan Forum Agama'])
 @section('content')
-<!-- Hero Start -->
-<section class="position-relative d-block vh-100" id="home">
-    <div class="slide-inner slide-bg-image d-flex align-items-center slider-lembaga"
-        style="background: center; height: 100%; background-color:#d7d3c1;">
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col-md-12">
-                    <div class="title-heading text-center">
-                        <p class="heading animate__animated animate__fadeInLeft" style="margin-top:60px">Paguyuban dan
-                            Forum Agama</p>
-                        <p class="heading animate__animated animate__fadeInLeft animate__slow">Universitas Udayana</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- Hero End -->
 
-<section class="section" style="background-color: #E0E0E0;">
+
+ <!-- ======= Hero Section ======= -->
+ <section id="hero" class="hero d-flex align-items-center" style="background: url(assets/img/kertas4.webp) top center no-repeat;">
+
     <div class="container">
-        <div class="row card-lembaga" style="margin-top: -200px;">
+      <div class="row">
+        <div class="col-lg-12 d-flex flex-column justify-content-center">
+          <h1 data-aos="fade-up" class="text-100">Paguyuban Dan Forum Agama</h1>
 
-
-            @foreach ($paguyubans as $paguyuban)
-
-            <div class="col-sm-3" data-aos="fade-up">
-                <a href="{{Route('paguyuban.detail',['paguyuban'=>$paguyuban->slug])}}">
-                    <div
-                        class="mt-4 feature-transform text-center shadow position-relative d-block overflow-hidden bg-white rounded">
-                        <img src="{{$paguyuban->image}}" class="img-fluid" alt="">
-                        <div class="content py-3" style="height: 160px">
-                            <p class="text-dark" style="font-weight: bold;">{{$paguyuban->nama_paguyuban}}</p>
-                            <p class="text-primary read-more">Selengkapnya <i class="mdi mdi-chevron-right"></i></p>
-                        </div>
-                    </div>
-                </a>
+          <div data-aos="fade-up" data-aos-delay="600">
+            <div class="text-center text-lg-start">
+              <a href="#paguyuban"
+                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                <span>Scroll Down</span>
+                <i class="bi bi-arrow-down"></i>
+              </a>
             </div>
-            <!--end col-->
+          </div>
+        </div>
+       
+      </div>
+    </div>
 
-            @endforeach
+  </section><!-- End Hero -->
+
+  <main id="main">
 
 
+
+
+    <!-- ======= paguyuban Section ======= -->
+    <section id="paguyuban" class="itemCard">
+
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header">
+          <h2>Informasi</h2>
+          <p class="text-dark">Paguyuban Dan Forum Agama</p>
+        </header>
+
+       
+        <div class="row gy-4" data-aos="fade-left">
+            
+            @foreach ($paguyubans as $paguyuban)
+          <div class="col-lg-3 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+              <a href="{{Route('paguyuban.detail',['paguyuban' => $paguyuban->slug])}}">
+            <div class="box">
+              <h3  class="fw-bold">{{$paguyuban->nama_paguyuban}}</h3>
+              <img src="{{$paguyuban->image}}" class="img-fluid" alt="">
+             <p></p>
+             <a href="{{Route('paguyuban.detail',['paguyuban' => $paguyuban->slug])}}" class="btn btn-danger  readmore-blog "
+             style="background-color: hsl(1deg 76% 32%);">Selengkapnya</a>
+            </div>
+        </a>
+          </div>
+          @endforeach
+       
+          </div>
+
+          
 
         </div>
-        <!--end row-->
-    </div>
-    <!--end container-->
-</section>
+
+      </div>
+
+    </section>
+    <!-- End paguyuban Section -->
+
 @endsection

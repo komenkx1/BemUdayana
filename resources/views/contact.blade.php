@@ -58,6 +58,7 @@
                 <span>Menteri Kominfo</span>
             </div>
           </div></div>
+      </div>
       <div class="row gy-4">
 
         <div class="col-lg-5 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">

@@ -74,7 +74,7 @@
               <img src="assets/img/Web-03.png" class="img-fluid" alt="">
               <h3>PARTISIPAN</h3>
               <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
-                  Sebagai Partisipan</mark> BEM PM Udayana akan memposisikan diri untuk bisa turut serta berperan aktif dalam berbagai kegiatan baik dalam lingkup mahasiswa ataupun masyarakat. Pesan aktif ini sesuai dengan mini kami nomr 5, yaitu dalam aspek pengabdian dan pergerakan dengan berlandaskan nilai intelektual untuk memberi kontribusi nyata dan tepat sasaran.
+                  Sebagai Partisipan</mark> BEM PM Udayana akan memposisikan diri untuk bisa turut serta berperan aktif dalam berbagai kegiatan baik dalam lingkup mahasiswa ataupun masyarakat. Pesan aktif ini sesuai dengan misi kami nomor 5, yaitu dalam aspek pengabdian dan pergerakan dengan berlandaskan nilai intelektual untuk memberi kontribusi nyata dan tepat sasaran.
               </p>
             </div>
           </div>

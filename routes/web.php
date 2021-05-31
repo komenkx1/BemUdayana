@@ -21,7 +21,7 @@ use App\Models\Hotline;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::middleware('optimizeImages')->group(function () {
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
 //dashboard
@@ -94,4 +94,4 @@ Route::view('/tentang', 'tentang')->name('tentang');
 Route::view('/kontak', 'contact')->name('kontak');
 Route::view('/asrama', 'asrama')->name('asrama');
 
-
+});

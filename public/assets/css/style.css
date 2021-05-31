@@ -25,6 +25,9 @@
   font-style: normal;
 
 }
+iframe#tidio-chat-iframe{
+  inset: auto -10px 50px auto!important;
+}
 :root {
   scroll-behavior: smooth;
 }
@@ -2282,6 +2285,9 @@ section {
   .header {
     padding: 10px 0!important;
   }
+  iframe#tidio-chat-iframe{
+    inset: auto 0px 50px auto!important;
+  }
   
 }
 
@@ -2442,6 +2448,3 @@ h3.post-title:hover{
   .breadcrumbs a:hover{
     color: black!important;
   }
-iframe#tidio-chat-iframe{
-  inset: auto -10px 50px auto!important;
-}

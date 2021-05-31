@@ -16,7 +16,7 @@
       <div class="text-center mb-4">
         <img class="mb-4" src="/assets/img/icon.png" alt="" width="30%" height="30%">
         <h1 class="h3 mb-3 font-weight-normal">Welcome to the Admin Page</h1>
-        <p>"Bersama Ciptakan Karsa dalam Semangat Reparasi Cita untuk Udayana dan Indonesia"</p>
+        <p>"Integrasi Ragam Karya Guna Menjadikan BEM PM Universitas Udayana sebagai Wadah untuk Berkontribusi Aktif dalam Mewujudkan Kebermanfaatan bagi Udayana, Bali, dan Indonesia"</p>
       </div>
 
    

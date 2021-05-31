@@ -57,8 +57,10 @@
                 <h4>Ngurah Dinata</h4>
                 <span>Menteri Kominfo</span>
             </div>
-          </div></div>
+          </div>
+        </div>
       </div>
+      <br>
       <div class="row gy-4">
 
         <div class="col-lg-5 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">

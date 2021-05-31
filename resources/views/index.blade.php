@@ -15,7 +15,7 @@
 
             Pemerintahan Mahasiswa
 
-            Universitas Udayana 2020</h1>
+            Universitas Udayana 2021</h1>
 
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
@@ -64,7 +64,7 @@
               <img src="assets/img/Web-02.png" class="img-fluid" alt="">
               <h3>KALOBORATOR</h3>
               <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
-                  Sebagai Kolaborator</mark> kami rasa salah satu solusi era VUCA (Vulnerable, Uncertainty, COmplexity, Ambiguity) saat ini perlu langkah-langkah kolaborsai dengan berbagai pihak. Karena BEM PM sedbagai wadah yang inklusif tetap memerlukan potensi ataupun partisipasi dari pihak lain untuk bergerak memberi kebermanfaatan secara bersama-sama.
+                  Sebagai Kolaborator</mark> kami rasa salah satu solusi era VUCA (Vulnerable, Uncertainty, Complexity, Ambiguity) saat ini perlu langkah-langkah kolaborsai dengan berbagai pihak. Karena BEM PM sedbagai wadah yang inklusif tetap memerlukan potensi ataupun partisipasi dari pihak lain untuk bergerak memberi kebermanfaatan secara bersama-sama.
               </p>
             </div>
           </div>

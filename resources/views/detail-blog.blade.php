@@ -57,9 +57,9 @@
               <div>
                 <h4>BEM PM UNUD</h4>
                 <div class="social-links">
-                  <a href="https://twitters.com/#"><i class="bi bi-twitter"></i></a>
-                  <a href="https://facebook.com/#"><i class="bi bi-facebook"></i></a>
-                  <a href="https://instagram.com/#"><i class="biu bi-instagram"></i></a>
+                  <a href="https://twitter.com/BEM_Udayana" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.youtube.com/channel/UCXb4WEhsHyKtMdqPaKJ4okQ" class="youtube"><i class="bi bi-youtube"></i></a>
+                  <a href="https://www.instagram.com/bem_udayana/?hl=id" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
                 </div>
                 <p>Badan Eksekutif Mahasiswa Pemerintahan mahasiswa Universitas Udayana</p>
               </div>

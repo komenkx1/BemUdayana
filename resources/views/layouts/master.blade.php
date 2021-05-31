@@ -82,10 +82,9 @@
             <p>Integrasi Ragam Karya Guna Menjadikan BEM PM Universitas Udayana sebagai Wadah untuk Berkontribusi Aktif
               dalam Mewujudkan Kebermanfaatan bagi Udayana, Bali, dan Indonesia</p>
             <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin bx bxl-linkedin"></i></a>
+              <a href="https://twitter.com/BEM_Udayana" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCXb4WEhsHyKtMdqPaKJ4okQ" class="youtube"><i class="bi bi-youtube"></i></a>
+              <a href="https://www.instagram.com/bem_udayana/?hl=id" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
             </div>
           </div>
 

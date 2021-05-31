@@ -2,7 +2,7 @@
  <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="/" class="logo d-flex align-items-center">
         <img src="/assets/img/logo-dark.png" alt="">
 
       </a>
@@ -20,7 +20,7 @@
               <li><a href="{{Route('paguyuban')}}" class="@if($title == "Paguyuban Dan Forum Agama") active @endif">Paguyuban Dan Forum Agama</a></li>
             </ul>
           </li>
-          <li><a class="nav-link" href="{{Route('kontak')}}">Contact</a></li>
+          <li><a  href="{{Route('kontak')}}" class="@if($title == "Contact us") active @endif">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

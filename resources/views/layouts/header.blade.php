@@ -20,7 +20,7 @@
               <li><a href="{{Route('paguyuban')}}" class="@if($title == "Paguyuban Dan Forum Agama") active @endif">Paguyuban Dan Forum Agama</a></li>
             </ul>
           </li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="{{Route('kontak')}}">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

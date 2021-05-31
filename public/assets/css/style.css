@@ -2448,3 +2448,6 @@ h3.post-title:hover{
   .breadcrumbs a:hover{
     color: black!important;
   }
+ul.pagination{
+  flex-wrap:wrap!important
+}

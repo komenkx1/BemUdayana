@@ -130,7 +130,7 @@
   <script src="/assets/vendor/purecounter/purecounter.js"></script>
   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
-
+  <script src="//code.tidio.co/0gyszvehigkd3fbzbigtu1gpjtehqloa.js" async></script>
   <!-- Template Main JS File -->
   <!-- Loader -->
   <script>

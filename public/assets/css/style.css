@@ -2442,3 +2442,6 @@ h3.post-title:hover{
   .breadcrumbs a:hover{
     color: black!important;
   }
+iframe#tidio-chat-iframe{
+  inset: auto -10px 50px auto!important;
+}

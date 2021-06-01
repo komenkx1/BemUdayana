@@ -126,7 +126,7 @@
      $('#DeletemodalForm').modal('show');
       var id = $(this).data('id');
       var nama = $(this).data('nama');
-      $('#formDelete').attr('action', '/admin/user/destroy/' + id);
+      $('#formDelete').attr('action', '/bem-admin/user/destroy/' + id);
     });
         $('#tbPengurus').DataTable({
            "bAutoWidth": true,

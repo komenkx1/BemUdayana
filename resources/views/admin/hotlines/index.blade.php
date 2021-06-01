@@ -108,7 +108,7 @@
      $('#DeletemodalForm').modal('show');
       var id = $(this).data('id');
       var nama = $(this).data('nama');
-      $('#formDelete').attr('action', '/admin/hotline/destroy/' + id);
+      $('#formDelete').attr('action', '/bem-admin/hotline/destroy/' + id);
     });
         $('#tbPengurus').DataTable({
            "bAutoWidth": true,

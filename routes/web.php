@@ -25,7 +25,7 @@ Route::middleware('optimizeImages')->group(function () {
 Auth::routes();
 Route::group(['middleware' => ['auth']], function () {
 //dashboard
-Route::get('/admin', [DashboardController::class, 'index'])->name('dashboard');
+Route::get('/bem-admin', [DashboardController::class, 'index'])->name('dashboard');
 
 //profile
 Route::put('/profile/update/{user:id}', [DashboardController::class, 'profile'])->name('profile.update');
@@ -39,43 +39,43 @@ Route::post('/event/update/edit-date', [DashboardController::class, 'updateEvent
 // route role
 Route::group(['middleware' => ['auth','roles:super admin']], function () {
     //user verif
-    Route::get('/admin/user', [UserController::class, 'index'])->name('user');
-    Route::put('/admin/user/verif/{user:id}', [UserController::class, 'verif'])->name('user.verif');
-    Route::delete('/admin/user/destroy/{user:id}', [UserController::class, 'destroy'])->name('user.destroy');
+    Route::get('/bem-admin/user', [UserController::class, 'index'])->name('user');
+    Route::put('/bem-admin/user/verif/{user:id}', [UserController::class, 'verif'])->name('user.verif');
+    Route::delete('/bem-admin/user/destroy/{user:id}', [UserController::class, 'destroy'])->name('user.destroy');
 });
 
 //blog
-Route::get('/admin/blog', [BlogController::class, 'index'])->name('blog-admin');
-Route::get('/admin/blog/create', [BlogController::class, 'create'])->name('blog-admin.create');
-Route::get('/admin/blog/edit/{post:pslug}', [BlogController::class, 'edit'])->name('blog-admin.edit');
-Route::post('/admin/blog/store', [BlogController::class, 'store'])->name('blog-admin.store');
-Route::put('/admin/blog/update/{post:pid}', [BlogController::class, 'update'])->name('blog-admin.update');
-Route::delete('/admin/blog/destroy/{post:pid}', [BlogController::class, 'destroy'])->name('blog-admin.destroy');
+Route::get('/bem-admin/blog', [BlogController::class, 'index'])->name('blog-admin');
+Route::get('/bem-admin/blog/create', [BlogController::class, 'create'])->name('blog-admin.create');
+Route::get('/bem-admin/blog/edit/{post:pslug}', [BlogController::class, 'edit'])->name('blog-admin.edit');
+Route::post('/bem-admin/blog/store', [BlogController::class, 'store'])->name('blog-admin.store');
+Route::put('/bem-admin/blog/update/{post:pid}', [BlogController::class, 'update'])->name('blog-admin.update');
+Route::delete('/bem-admin/blog/destroy/{post:pid}', [BlogController::class, 'destroy'])->name('blog-admin.destroy');
 
 //hotlines
-Route::get('/admin/hotline', [HotlineController::class, 'index'])->name('hotline');
-Route::delete('/admin/hotline/destroy/{hotline:id}', [HotlineController::class, 'destroy'])->name('hotline.destroy');
+Route::get('/bem-admin/hotline', [HotlineController::class, 'index'])->name('hotline');
+Route::delete('/bem-admin/hotline/destroy/{hotline:id}', [HotlineController::class, 'destroy'])->name('hotline.destroy');
 
 //jurnal
-Route::get('/admin/jurnal', [JurnalController::class, 'index'])->name('jurnal');
-Route::get('/admin/jurnal/create', [JurnalController::class, 'create'])->name('jurnal.create');
-Route::get('/admin/jurnal/edit/{jurnal:id}', [JurnalController::class, 'edit'])->name('jurnal.edit');
-Route::post('/admin/jurnal/store', [JurnalController::class, 'store'])->name('jurnal.store');
-Route::put('/admin/jurnal/active/{jurnal:id}', [JurnalController::class, 'active'])->name('jurnal.active');
-Route::put('/admin/jurnal/nonaktif/{jurnal:id}', [JurnalController::class, 'nonaktif'])->name('jurnal.nonaktif');
-Route::put('/admin/jurnal/update/{jurnal:id}', [JurnalController::class, 'update'])->name('jurnal.update');
-Route::delete('/admin/jurnal/destroy/{jurnal:id}', [JurnalController::class, 'destroy'])->name('jurnal.destroy');
+Route::get('/bem-admin/jurnal', [JurnalController::class, 'index'])->name('jurnal');
+Route::get('/bem-admin/jurnal/create', [JurnalController::class, 'create'])->name('jurnal.create');
+Route::get('/bem-admin/jurnal/edit/{jurnal:id}', [JurnalController::class, 'edit'])->name('jurnal.edit');
+Route::post('/bem-admin/jurnal/store', [JurnalController::class, 'store'])->name('jurnal.store');
+Route::put('/bem-admin/jurnal/active/{jurnal:id}', [JurnalController::class, 'active'])->name('jurnal.active');
+Route::put('/bem-admin/jurnal/nonaktif/{jurnal:id}', [JurnalController::class, 'nonaktif'])->name('jurnal.nonaktif');
+Route::put('/bem-admin/jurnal/update/{jurnal:id}', [JurnalController::class, 'update'])->name('jurnal.update');
+Route::delete('/bem-admin/jurnal/destroy/{jurnal:id}', [JurnalController::class, 'destroy'])->name('jurnal.destroy');
 
 //poadcast
 
-Route::get('/admin/poadcast', [PoadcastController::class, 'index'])->name('poadcast');
-Route::get('/admin/poadcast/create', [PoadcastController::class, 'create'])->name('poadcast.create');
-Route::get('/admin/poadcast/edit/{poadcast:id}', [PoadcastController::class, 'edit'])->name('poadcast.edit');
-Route::post('/admin/poadcast/store', [PoadcastController::class, 'store'])->name('poadcast.store');
-Route::put('/admin/poadcast/active/{poadcast:id}', [PoadcastController::class, 'active'])->name('poadcast.active');
-Route::put('/admin/poadcast/nonaktif/{poadcast:id}', [PoadcastController::class, 'nonaktif'])->name('poadcast.nonaktif');
-Route::put('/admin/poadcast/update/{poadcast:id}', [PoadcastController::class, 'update'])->name('poadcast.update');
-Route::delete('/admin/poadcast/destroy/{poadcast:id}', [PoadcastController::class, 'destroy'])->name('poadcast.destroy');
+Route::get('/bem-admin/poadcast', [PoadcastController::class, 'index'])->name('poadcast');
+Route::get('/bem-admin/poadcast/create', [PoadcastController::class, 'create'])->name('poadcast.create');
+Route::get('/bem-admin/poadcast/edit/{poadcast:id}', [PoadcastController::class, 'edit'])->name('poadcast.edit');
+Route::post('/bem-admin/poadcast/store', [PoadcastController::class, 'store'])->name('poadcast.store');
+Route::put('/bem-admin/poadcast/active/{poadcast:id}', [PoadcastController::class, 'active'])->name('poadcast.active');
+Route::put('/bem-admin/poadcast/nonaktif/{poadcast:id}', [PoadcastController::class, 'nonaktif'])->name('poadcast.nonaktif');
+Route::put('/bem-admin/poadcast/update/{poadcast:id}', [PoadcastController::class, 'update'])->name('poadcast.update');
+Route::delete('/bem-admin/poadcast/destroy/{poadcast:id}', [PoadcastController::class, 'destroy'])->name('poadcast.destroy');
 });
 
 //lannding

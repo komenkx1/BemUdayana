@@ -44,17 +44,17 @@
       </header>
       <div class="row gy-4">
 
-        <div class="col-lg-5 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="member">
-            <div class="member-img">
-              <img src="assets/img/NGURAH.png" class="img-fluid" alt="">
+            <div class="member-imgs">
+              <img src="assets/img/NGURAH.webp" class="img-fluid" alt="">
               <div class="social">
                 <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
               </div>
             </div>
             <div class="member-info">
-                <h4>Ngurah Dinata</h4>
+                <h4 class="mt-3">Ngurah Dinata</h4>
                 <span>Menteri Kominfo</span>
             </div>
           </div>
@@ -63,17 +63,17 @@
       <br>
       <div class="row gy-4">
 
-        <div class="col-lg-5 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="member">
-            <div class="member-img">
-              <img src="assets/img/SHILTA.png" class="img-fluid" alt="">
+            <div class="member-imgs">
+              <img src="assets/img/SHILTA.webp" class="img-fluid" alt="">
               <div class="social">
                 <a target="blank" href="https://wa.me/6289607817873"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/shilta_inda/"><i class="bi bi-instagram"></i></a>
               </div>
             </div>
             <div class="member-info">
-              <h4>Shilta Inda</h4>
+              <h4 class="mt-3">Shilta Inda</h4>
               <span>Web Developer</span>
             </div>
           </div>
@@ -82,17 +82,17 @@
         <br>
         <br>
         <br>
-        <div class="col-lg-5 mx-auto col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-3 mx-auto col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="member">
-            <div class="member-img">
-              <img src="assets/img/WAHYU.png" class="img-fluid" alt="">
+            <div class="member-imgs">
+              <img src="assets/img/WAHYU.webp" class="img-fluid" alt="">
               <div class="social">
                 <a target="blank" href="https://wa.me/6288219157496"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/mangwahyu19/"><i class="bi bi-instagram"></i></a>
               </div>
             </div>
             <div class="member-info">
-              <h4>Komang Wahyu</h4>
+              <h4 class="mt-3">Komang Wahyu</h4>
               <span>Web Developer</span>
             
             </div>

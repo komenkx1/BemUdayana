@@ -186,7 +186,7 @@
               <div class="count-box">
                 <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
                 <div>
-                  <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
+                  <span data-purecounter-start="0" data-purecounter-end="101" data-purecounter-duration="1"
                     class="purecounter"></span>
                   <p>Staff</p>
                 </div>
@@ -197,7 +197,7 @@
               <div class="count-box">
                 <i class="bi bi-people" style="color: #15be56;"></i>
                 <div>
-                  <span data-purecounter-start="0" data-purecounter-end="31" data-purecounter-duration="1"
+                  <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
                     class="purecounter"></span>
                   <p>Menteri & Wakil Menteri</p>
                 </div>
@@ -208,7 +208,7 @@
               <div class="count-box">
                 <i class="bi bi-person-bounding-box" style="color: #bb0852;"></i>
                 <div>
-                  <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
+                  <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
                     class="purecounter"></span>
                   <p>Menteri Koordinator</p>
                 </div>

@@ -197,7 +197,7 @@
               <div class="count-box">
                 <i class="bi bi-people" style="color: #15be56;"></i>
                 <div>
-                  <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1"
+                  <span data-purecounter-start="0" data-purecounter-end="31" data-purecounter-duration="1"
                     class="purecounter"></span>
                   <p>Menteri & Wakil Menteri</p>
                 </div>
@@ -208,7 +208,7 @@
               <div class="count-box">
                 <i class="bi bi-person-bounding-box" style="color: #bb0852;"></i>
                 <div>
-                  <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1"
+                  <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1"
                     class="purecounter"></span>
                   <p>Menteri Koordinator</p>
                 </div>
@@ -234,7 +234,7 @@
               <li data-filter=".filter-rhh">RHH</li>
               <li data-filter=".filter-ppm">PPM</li>
               <li data-filter=".filter-pergerakan">Pergerakan</li>
-              <li data-filter=".filter-sosmas">Sosmas</li>
+              <li data-filter=".filter-sosmas">SOSMAS</li>
             </ul>
           </div>
         </div>
@@ -245,30 +245,30 @@
           <div class="col-lg-3 col-md-6 grid-item filter-preswapres" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pres Wapres/1.png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Ansyah</h4>
+                <span>Presiden Mashasiswa</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-preswapres" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-1.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pres Wapres/2.png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Deva Arya</h4>
+                <span>Wakil Persiden Mahasiswa</span>
               </div>
             </div>
           </div>
@@ -276,106 +276,107 @@
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Dicky (menteri KHMK).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Dicky</h4>
+                <span>Menteri Harmonisasi & Manajemen Kabinet</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Madeline ( wamen KHMK).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Madeline</h4>
+                <span>Wakil Menteri Harmonisasi & Manajemen Kabinet</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Dian (Menkeu).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Dian</h4>
+                <span>Menteri Keuangan</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Adinda (wamen keu).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Adinda</h4>
+                <span>Wakil Menteri Keuangan</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Mawar (menteri Keskab).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Mawar</h4>
+                <span>Menteri Kesetretariatan Kabinet</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Berli ( wamen Keskab).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Berli</h4>
+                <span>Wakil Menteri Kesetretariatan Kabinet</span>
               </div>
             </div>
           </div>
+          
           <!-- RHH -->
           <div class="col-lg-12 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Lidia (menko).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Lidia</h4>
+                <span>Menko Relasi & Harmonisasi Hubungan</span>
               </div>
             </div>
           </div>
@@ -383,95 +384,445 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/NGURAH.png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Ngurah Dinata</h4>
+                <span>Menteri Komunikasi, Media Dan Informasi</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/audy (wamen kominfo).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Audy</h4>
+                <span>Wakil Menteri Komunikasi, Media Dan Informasi</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Darryl ( men hublu).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Darryl</h4>
+                <span>Menteri Hubungan Luar</span>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Manika (wamen hublu).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Manika</h4>
+                <span>Wakil Menteri Hubungan Luar</span>
               </div>
             </div>
           </div>
+         
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Ryan ( men sinpus).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Ryan</h4>
+                <span>Menteri Sinergisme Kampus</span>
               </div>
             </div>
           </div>
+
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/team/team-2.jpg" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Dini (wamen sinpus).png" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
+                <h4>Dini</h4>
+                <span>Menteri Sinergisme Kampus</span>
+              </div>
+            </div>
+          </div>
+          {{-- PPM --}}
+          <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/PPM/nova-(menko)_optimized.png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nova</h4>
+                <span>Menko Pengembangan Potensi Mahasiswa</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/PPM/Made TD (men risbang).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Made TD</h4>
+                <span>Menteri Riset Dan Pengembangan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/PPM/nanda-(-wamen-risbang-)_optimized.png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Nanda</h4>
+                <span>Wakil Menteri Riset Dan Pengembangan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/PPM/krisna (men psdm).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Krisna Yoga</h4>
+                <span>Menteri Pengembangan Sumber Daya Manusia</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/PPM/widya-(wamen-psdm)_optimized.png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Widya</h4>
+                <span>Wakil Menteri Pengembangan Sumber Daya Manusia</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/PPM/indah (men mibat).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Indah</h4>
+                <span>Menteri Minat Dan Bakat</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/PPM/febi (wamen mibat).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Febi</h4>
+                <span>Wakil Menteri Minat Dan Bakat</span>
+              </div>
+            </div>
+          </div>
+          {{-- Pergerakan --}}
+          <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/Pergerakan/Haganta ( menko).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>haganta</h4>
+                <span>Menko Pergerakan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/Pergerakan/ChaCha (men adkesma dan Jakpus ).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>ChaCha</h4>
+                <span>Menteri Adkesma & Kebijakan Kampus</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/Pergerakan/aldo (wamen adkesma dan Jakpus ).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Aldo</h4>
+                <span>Wakil Menteri Adkesma & Kebijakan Kampus</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/Pergerakan/Desi (men jakda).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Desi</h4>
+                <span>Menteri Kebijakan Daerah</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/Pergerakan/Anes (wamen jakda).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Anes</h4>
+                <span>Wakil Menteri Kebijakan Daerah</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/Pergerakan/halma (men jaknas).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Halma</h4>
+                <span>Menteri Kebijakan Nasional</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/Pergerakan/tio (wamen jaknas).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Tio</h4>
+                <span>Wakil Menteri Kebijakan Nasional</span>
+              </div>
+            </div>
+          </div>
+           {{-- SOSMAS --}}
+           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Arif ( menko).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Arif</h4>
+                <span>Menko SOSMAS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Mirza (men soslindup).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Mirza</h4>
+                <span>Menteri Sosial & Lingkungan Hidup</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Andy (wamen soslindup).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>AlAndydo</h4>
+                <span>Wakil Sosial & Lingkungan Hidup</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Intan (men kewirausahaan).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Intan</h4>
+                <span>Menteri Kewirausahaan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Anes</h4>
+                <span>Wakil Menteri Kewirausahaan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Jeje ( men kebudayaan).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Jeje</h4>
+                <span>Menteri Kebudayaan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Dewi</h4>
+                <span>Wakil Menteri Kebudayaan</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Rahayu (men pemdes).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Rahayu</h4>
+                <span>Menteri Pemberdayaan Desa</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
+            <div class="member">
+              <div class="member-img">
+                <img src="assets/img/BEM/SOSMAS/Vito ( wamen pemdes).png" class="img-fluid" alt="">
+                <div class="social">
+                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                </div>
+              </div>
+              <div class="member-info">
+                <h4>Vito</h4>
+                <span>Wakil Menteri Pemberdayaan Desa</span>
               </div>
             </div>
           </div>
         </div>
-
+       
       </div>
 
     </section><!-- End staff Section -->

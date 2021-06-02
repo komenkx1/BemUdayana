@@ -60,7 +60,10 @@
 {
     box-sizing: border-box;
 }
-
+html, body, table{
+    max-width: 100%;
+    overflow-x: hidden;
+}
 html
 {
     font-family: sans-serif;

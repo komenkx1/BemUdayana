@@ -28,7 +28,7 @@
           <div class="card-header bg-transparent">
             <div class="row align-items-center">
               <div class="col">
-                <h5 class="h3 mb-0">Tulis Postingan Blog</h5>
+                <h5 class="h3 mb-0">Edit Link</h5>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@
                 </small>
             @endif
             <div class="row mt-3">
-                <div class="col-4">
+                <div class="col-lg-4 col-12">
                     <div class="form-group">
                         <label for="code">Custom alias (optional)</label>
                         <input type="text" class="form-control {{ $errors->has('code') ? 'is-invalid' : '' }}" id="code" name="code" placeholder="Set your custom alias" value="{{ old('code', $url->code) }}">
@@ -64,7 +64,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-12">
                     <div class="form-group">
                         <label for="expires_at">Expires at (optional)</label>
                         <input type="datetime-local" class="form-control {{ $errors->has('expires_at') ? 'is-invalid' : '' }}" id="expires_at" name="expires_at" placeholder="Set your expiration date" value="{{ old('expires_at', ($url->couldExpire() ? $url->expires_at->format('Y-m-d\TH:i') : null)) }}">

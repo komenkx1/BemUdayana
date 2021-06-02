@@ -54,14 +54,15 @@
         <div class="card-header bg-transparent">
           <div class="row align-items-center">
             <div class="col">
-              <h5 class="h3 mb-0">Hotline List</h5>
+              <h5 class="h3 mb-0">Hotline Page</h5>
             </div>
           </div>
         </div>
         <div class="card-body">
           <!-- Chart -->
           <div class="table-responsive table">
-            <table id="tbPengurus" class=" datatable stripe align-items-center table-flush border-0">
+            <iframe src="https://www.tidio.com/panel/login" width="100%" height="500px" frameborder="0"></iframe>
+            {{-- <table id="tbPengurus" class=" datatable stripe align-items-center table-flush border-0">
               <thead class="thead-light">
                 <tr>
                   <th>No</th>
@@ -89,7 +90,7 @@
 
                 @endforeach
               </tbody>
-            </table>
+            </table> --}}
           </div>
         </div>
       </div>
@@ -102,7 +103,7 @@
 @endsection
 
 @section('footer')
-<script>
+{{-- <script>
   $(document).ready(function() {
     $(document).on('click','.trash', function () { 
      $('#DeletemodalForm').modal('show');
@@ -156,6 +157,6 @@
 
     });
 
-</script>
+</script> --}}
 
 @endsection

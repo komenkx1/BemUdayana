@@ -24,9 +24,9 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{Route('hotline')}}">
-              <i class="ni ni-send text-grey"></i>
-              <span class="nav-link-text">HotLines</span>
+            <a class="nav-link" href="https://www.tidio.com/panel/login" target="blank">
+              <i class="fas fa-external-link-alt"></i>
+              <span class="nav-link-text">HotLines</span> 
             </a>
           </li>
           <li class="nav-item">

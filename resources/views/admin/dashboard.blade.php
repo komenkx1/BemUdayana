@@ -150,17 +150,21 @@
         center: 'title',
         right: 'month,basicWeek,basicDay'
       },
-
+      longPressDelay: 0,
       editable: true,
       eventLimit: true, // allow "more" link when too many events
       selectable: true,
       selectHelper: true,
+      dayClick: function(date) {
+    },
+  
       select: function(start, end) {
 
         $('#ModalAdd #start').val(moment(start).format('YYYY-MM-DD HH:mm:ss'));
         $('#ModalAdd #end').val(moment(end).format('YYYY-MM-DD HH:mm:ss'));
         $('#ModalAdd').modal('show');
       },
+ 
       eventRender: function(event, element) {
         element.bind('dblclick', function() {
           $('#ModalEdit #formEdit').attr('action','/event/update/'+event.id);

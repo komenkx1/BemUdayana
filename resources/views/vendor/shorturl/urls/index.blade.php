@@ -27,7 +27,7 @@
               <div class="card-header bg-transparent">
                 <div class="row align-items-center">
                   <div class="col">
-                    <h5 class="h3 mb-0">Blog Post List</h5>
+                    <h5 class="h3 mb-0">Short Link List</h5>
                   </div>
                 </div>
               </div>

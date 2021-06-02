@@ -9,7 +9,7 @@
   <meta name="RHH" content="Dashboard BEM PM UNUD">
   <title>{{$title.' - BEM PM Unud'}}</title>
   <!-- Favicon -->
-  <link rel="icon" href="/assets/icon.png" type="image/png">
+  <link rel="icon" href="/assets/img/icon.png" type="image/png">
   <!-- Fonts -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700">
   <!-- Icons -->

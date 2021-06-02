@@ -26,7 +26,7 @@
   <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
+ 
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
 
@@ -129,11 +129,16 @@
   <script src="/assets/vendor/purecounter/purecounter.js"></script>
   <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js" integrity="sha512-jNDtFf7qgU0eH/+Z42FG4fw3w7DM/9zbgNPe3wfJlCylVDTT3IgKW5r92Vy9IHa6U50vyMz5gRByIu4YIXFtaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.js" integrity="sha512-FwqNPb8ENFXApJKNgRgYq5ok7VoOf5ImaOdzyF/xe/T5jdd/S0xq0CXBLDhpzaemxpQ61X3nLVln6KaczwhKgA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="//code.tidio.co/0gyszvehigkd3fbzbigtu1gpjtehqloa.js" async></script>
+  
   <!-- Template Main JS File -->
   <!-- Loader -->
   <script>
     $(document).ready(function(){
+
+      $('.load-img-fungsio').lazyload({ threshold : 200 });
       // $('.preloader').fadeOut();
             $('.preloader').delay(1000).fadeOut('slow');
             $('body').delay(350).css({

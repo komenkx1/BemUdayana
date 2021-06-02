@@ -239,7 +239,7 @@
           </div>
         </div>
 
-        <div class="row gy-4 grid" data-aos="fade-up" data-aos-delay="200">
+        <div class="row gy-4 grid load-img-fungsio" data-aos="fade-up" data-aos-delay="200">
 
 
           <div class="col-lg-3 col-md-6 grid-item filter-preswapres" data-aos="fade-up" data-aos-delay="200">
@@ -247,8 +247,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pres Wapres/1.png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -262,8 +262,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pres Wapres/2.png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -278,8 +278,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/BPH/Dicky (menteri KHMK).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -293,8 +293,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/BPH/Madeline ( wamen KHMK).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -308,8 +308,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/BPH/Dian (Menkeu).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -323,8 +323,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/BPH/Adinda (wamen keu).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -338,8 +338,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/BPH/Mawar (menteri Keskab).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -353,8 +353,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/BPH/Berli ( wamen Keskab).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -370,8 +370,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/RHH/Lidia (menko).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -386,8 +386,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/RHH/NGURAH.png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -401,8 +401,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/RHH/audy (wamen kominfo).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -416,8 +416,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/RHH/Darryl ( men hublu).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -431,8 +431,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/RHH/Manika (wamen hublu).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -447,8 +447,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/RHH/Ryan ( men sinpus).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -463,8 +463,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/RHH/Dini (wamen sinpus).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -479,8 +479,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/PPM/nova-(menko)_optimized.png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -494,8 +494,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/PPM/Made TD (men risbang).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -509,8 +509,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/PPM/nanda-(-wamen-risbang-)_optimized.png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -524,13 +524,13 @@
               <div class="member-img">
                 <img src="assets/img/BEM/PPM/krisna (men psdm).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>Krisna Yoga</h4>
-                <span>Menteri Pengembangan Sumber Daya Manusia</span>
+                <span>Menteri Pengembangan Sumber Daya Mahasiswa</span>
               </div>
             </div>
           </div>
@@ -539,13 +539,13 @@
               <div class="member-img">
                 <img src="assets/img/BEM/PPM/widya-(wamen-psdm)_optimized.png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
                 <h4>Widya</h4>
-                <span>Wakil Menteri Pengembangan Sumber Daya Manusia</span>
+                <span>Wakil Menteri Pengembangan Sumber Daya Mahasiswa</span>
               </div>
             </div>
           </div>
@@ -554,8 +554,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/PPM/indah (men mibat).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -569,8 +569,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/PPM/febi (wamen mibat).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -585,8 +585,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pergerakan/Haganta ( menko).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -600,8 +600,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pergerakan/ChaCha (men adkesma dan Jakpus ).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -615,8 +615,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pergerakan/aldo (wamen adkesma dan Jakpus ).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -630,8 +630,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pergerakan/Desi (men jakda).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -645,8 +645,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pergerakan/Anes (wamen jakda).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -660,8 +660,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pergerakan/halma (men jaknas).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -675,8 +675,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/Pergerakan/tio (wamen jaknas).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -691,8 +691,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Arif ( menko).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -706,8 +706,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Mirza (men soslindup).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -721,8 +721,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Andy (wamen soslindup).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -736,8 +736,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Intan (men kewirausahaan).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -751,8 +751,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -766,8 +766,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Jeje ( men kebudayaan).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -781,8 +781,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -796,8 +796,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Rahayu (men pemdes).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -811,8 +811,8 @@
               <div class="member-img">
                 <img src="assets/img/BEM/SOSMAS/Vito ( wamen pemdes).png" class="img-fluid" alt="">
                 <div class="social">
-                   <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
-                <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>
+                   <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
+                <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">

@@ -726,8 +726,8 @@
                 </div>
               </div>
               <div class="member-info">
-                <h4>AlAndydo</h4>
-                <span>Wakil Sosial & Lingkungan Hidup</span>
+                <h4>Andy</h4>
+                <span>Wakil Menteri Sosial & Lingkungan Hidup</span>
               </div>
             </div>
           </div>

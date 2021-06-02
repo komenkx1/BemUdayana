@@ -245,7 +245,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-preswapres" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pres Wapres/1.png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pres Wapres/1.webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -260,7 +260,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-preswapres" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pres Wapres/2.png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pres Wapres/2.webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -276,7 +276,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/BPH/Dicky (menteri KHMK).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Dicky (menteri KHMK).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -291,7 +291,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/BPH/Madeline ( wamen KHMK).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Madeline ( wamen KHMK).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -306,7 +306,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/BPH/Dian (Menkeu).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Dian (Menkeu).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -321,7 +321,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/BPH/Adinda (wamen keu).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Adinda (wamen keu).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -336,7 +336,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/BPH/Mawar (menteri Keskab).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Mawar (menteri Keskab).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -351,7 +351,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-bph" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/BPH/Berli ( wamen Keskab).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/BPH/Berli ( wamen Keskab).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -368,7 +368,7 @@
           <div class="col-lg-12 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/Lidia (menko).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Lidia (menko).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -384,7 +384,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/NGURAH.png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/NGURAH.webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -399,7 +399,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/audy (wamen kominfo).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/audy (wamen kominfo).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -414,7 +414,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/Darryl ( men hublu).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Darryl ( men hublu).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -429,7 +429,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/Manika (wamen hublu).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Manika (wamen hublu).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -445,7 +445,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/Ryan ( men sinpus).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Ryan ( men sinpus).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -461,7 +461,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/Dini (wamen sinpus).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/Dini (wamen sinpus).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -477,7 +477,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/PPM/nova-(menko)_optimized.png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/PPM/nova-(menko)_optimized.webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -492,7 +492,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/PPM/Made TD (men risbang).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/PPM/Made TD (men risbang).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -507,7 +507,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/PPM/nanda-(-wamen-risbang-)_optimized.png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/PPM/nanda-(-wamen-risbang-)_optimized.webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -522,7 +522,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/PPM/krisna (men psdm).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/PPM/krisna (men psdm).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -537,7 +537,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/PPM/widya-(wamen-psdm)_optimized.png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/PPM/widya-(wamen-psdm)_optimized.webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -552,7 +552,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/PPM/indah (men mibat).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/PPM/indah (men mibat).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -567,7 +567,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-ppm" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/PPM/febi (wamen mibat).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/PPM/febi (wamen mibat).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -583,7 +583,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pergerakan/Haganta ( menko).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pergerakan/Haganta ( menko).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -598,7 +598,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pergerakan/ChaCha (men adkesma dan Jakpus ).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pergerakan/ChaCha (men adkesma dan Jakpus ).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -613,7 +613,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pergerakan/aldo (wamen adkesma dan Jakpus ).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pergerakan/aldo (wamen adkesma dan Jakpus ).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -628,7 +628,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pergerakan/Desi (men jakda).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pergerakan/Desi (men jakda).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -643,7 +643,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pergerakan/Anes (wamen jakda).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pergerakan/Anes (wamen jakda).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -658,7 +658,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pergerakan/halma (men jaknas).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pergerakan/halma (men jaknas).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -673,7 +673,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-pergerakan" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/Pergerakan/tio (wamen jaknas).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/Pergerakan/tio (wamen jaknas).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -689,7 +689,7 @@
            <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Arif ( menko).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Arif ( menko).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -704,7 +704,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Mirza (men soslindup).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Mirza (men soslindup).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -719,7 +719,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Andy (wamen soslindup).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Andy (wamen soslindup).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -734,7 +734,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Intan (men kewirausahaan).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Intan (men kewirausahaan).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -749,7 +749,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -764,7 +764,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Jeje ( men kebudayaan).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Jeje ( men kebudayaan).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -779,7 +779,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -794,7 +794,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Rahayu (men pemdes).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Rahayu (men pemdes).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
@@ -809,7 +809,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Vito ( wamen pemdes).png" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Vito ( wamen pemdes).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>

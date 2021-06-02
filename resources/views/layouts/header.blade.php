@@ -13,8 +13,9 @@
           <li><a href="{{Route('blog')}}" class="@if($title == "Blog") active @endif">Blog</a></li>
           <li class="dropdown"><a href="#" class="@if($title == "Lembaga Mahasiswa" || $title == "Unit Kegiatan Mahasiswa" || $title == "Paguyuban Dan Forum Agama") active @endif" ><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#">Open Recruitment Big Event</a></li>
-
+              <li><a href="#">Open Recruitment</a></li>
+              <li><a href="#">Student Day</a></li>
+              <li><a href="#">IMUN</a></li>
               <li><a href="{{Route('lembaga-mahasiswa')}}" class="@if($title == "Lembaga Mahasiswa") active @endif" >Lembaga Mahasiswa</a></li>
               <li><a href="{{Route('ukm')}}" class="@if($title == "Unit Kegiatan Mahasiswa") active @endif" >UKM</a></li>
               <li><a href="{{Route('paguyuban')}}" class="@if($title == "Paguyuban Dan Forum Agama") active @endif">Paguyuban Dan Forum Agama</a></li>

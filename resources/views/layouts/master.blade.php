@@ -6,9 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>{{$title ?? 'BEM PM UDAYANA - Integrasi Karya'}}</title>
-  <meta content="BEM PM UDAYANA" name="Badan Eksekutif Mahasiswa Pemerintahan Mahasiswa Universitas Udayana ">
-
-  <meta content="Website Resmi BEM PM UDAYANA" name="Bem Pm Universitas Udayana">
+  <meta content="BEM PM UDAYANA" description="Badan Eksekutif Mahasiswa Pemerintahan Mahasiswa Universitas Udayana ">
 
   <!-- Favicons -->
   <link href="/assets/img/icon.png" rel="icon">

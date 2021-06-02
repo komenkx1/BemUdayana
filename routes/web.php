@@ -10,6 +10,7 @@ use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\PoadcastController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Hotline;
+use Gallib\ShortUrl\Facades\ShortUrl;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ use App\Models\Hotline;
 */
 Route::middleware('optimizeImages')->group(function () {
 Auth::routes();
+
 Route::group(['middleware' => ['auth']], function () {
 //dashboard
 Route::get('/bem-admin', [DashboardController::class, 'index'])->name('dashboard');
@@ -79,6 +81,7 @@ Route::delete('/bem-admin/poadcast/destroy/{poadcast:id}', [PoadcastController::
 });
 
 //lannding
+
 Route::get('/', [MainController::class, 'index'])->name('home');
 Route::get('/blog', [MainController::class, 'blog'])->name('blog');
 Route::get('/blog/detail/{blog:pslug}', [MainController::class, 'BlogDetail'])->name('blog.detail');
@@ -94,4 +97,13 @@ Route::view('/tentang', 'tentang')->name('tentang');
 Route::view('/kontak', 'contact')->name('kontak');
 Route::view('/asrama', 'asrama')->name('asrama');
 
+Route::group(['prefix'=>'bem-admin/shortlink','middleware' => 'auth'], function(){
+ShortUrl::createRoutes();
+ShortUrl::manageRoutes();
+
 });
+ShortUrl::redirectRoute();
+});
+
+
+

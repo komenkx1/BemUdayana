@@ -41,6 +41,12 @@
               <span class="nav-link-text">Poadcast</span>
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{Route('shorturl.url.index')}}">
+              <i class="ni ni-curved-next text-danger"></i>
+              <span class="nav-link-text">Short Link</span>
+            </a>
+          </li>
           @if (Auth::user()->role == 'super admin')
 
           <li class="nav-item">

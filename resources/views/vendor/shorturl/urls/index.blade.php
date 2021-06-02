@@ -94,9 +94,9 @@
            "columnDefs": [
                 { responsivePriority: 1, targets: 1 },
                 { responsivePriority: 2, targets: 4 },
-
+                
             ],
-            orderable: false,
+            order:false,
             bInfo: false,
             responsive: true,
             dom: 'Bfrtip',

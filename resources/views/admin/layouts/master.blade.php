@@ -28,7 +28,7 @@
 
   <!-- CKEditor (important)-->
   <script src="https://cdn.ckeditor.com/4.14.0/full-all/ckeditor.js"></script>
-  <x-embed-styles />
+
 </head>
 
 <body>

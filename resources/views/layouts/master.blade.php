@@ -57,11 +57,9 @@
   </div>
 </div>
 <!-- END LOADER -->
-    @if ($title == "BEM PM UDAYANA - Integrasi Karya")
+ 
     @include('layouts/header-home')
-    @else
-    @include('layouts/header')
-    @endif
+
   
     @yield('content')
 

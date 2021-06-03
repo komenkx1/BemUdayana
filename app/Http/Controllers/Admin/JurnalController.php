@@ -42,7 +42,7 @@ class JurnalController extends Controller
     {
         $jurnals = $request->all();
         $validator = Validator::make($jurnals, [
-            'pimage'      => 'max:1024|mimes:jpeg,jpg,png',
+            'thumbnail'      => 'max:1024|mimes:jpeg,jpg,png',
             'volume'      => 'numeric',
         ]);
         if ($validator->fails()) {
@@ -50,14 +50,16 @@ class JurnalController extends Controller
                 ->withErrors($validator)
                 ->withInput();
         } else {
-            $jurnals['status'] = 'nonaktif';
+            $jurnals['status'] = 'active';
 
             if ($request->thumbnail) {
                 $file_name = md5($request->title . microtime()) . '.' . $request->thumbnail->extension();
                 $request->thumbnail->storeAs('img/jurnal/', $file_name);
                 $jurnals['thumbnail'] =  $file_name;
             }
+            Jurnal::where('status','active')->update(['status' => "nonaktif"]);
             Jurnal::create($jurnals);
+            
         }
         return redirect(Route('jurnal'))->with('success', 'Jurnal Berhasil Ditambahkan');
     }
@@ -113,7 +115,8 @@ class JurnalController extends Controller
     {
         $jurnals = $request->all();
         $validator = Validator::make($jurnals, [
-            'pimage'      => 'max:1024|mimes:jpeg,jpg,png',
+            'thumbnail' => 'max:1024|mimes:jpeg,jpg,png',
+            'volume'      => 'numeric',
         ]);
         if ($validator->fails()) {
             return redirect()->back()
@@ -139,9 +142,17 @@ class JurnalController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy(Jurnal $jurnal)
-    {
+    {   
+        $lastjurnal =  Jurnal::orderBy('id','DESC')->first();
         Storage::delete('img/jurnal/' . $jurnal->thumbnail);
+
+
         $jurnal->delete();
+        if ($jurnal->id == $lastjurnal->id ) {
+
+            Jurnal::orderBy('id','DESC')->first()->update(['status' => "active"]);
+        }
+       
         return redirect()->back()->with('danger', 'Data Telah Dihapus');
     }
 }

@@ -40,8 +40,8 @@ class PoadcastController extends Controller
     {
         $poadcasts = $request->all();
         
-            $poadcasts['status'] = 'nonaktif';
-
+            $poadcasts['status'] = 'active';
+            Poadcast::where('status','active')->update(['status' => "nonaktif"]);
             Poadcast::create($poadcasts);
         
         return redirect(Route('poadcast'))->with('success', 'Link Poadcast Berhasil Ditambahkan');
@@ -113,7 +113,12 @@ class PoadcastController extends Controller
      */
     public function destroy(Poadcast $poadcast)
     {
+        $lastPoadcats =  Poadcast::orderBy('id','DESC')->first();
         $poadcast->delete();
+        if ($poadcast->id == $lastPoadcats->id ) {
+
+            Poadcast::orderBy('id','DESC')->first()->update(['status' => "active"]);
+        }
         return redirect()->back()->with('danger','Data Telah Dihapus');
     }
 }

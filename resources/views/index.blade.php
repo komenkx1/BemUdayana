@@ -899,10 +899,49 @@
     </section> -->
     <!-- End proker Section -->
 
+  <!-- JURNAL -->
 
+  <section id="podCastJurnal" class="mt-2">
+    @if($jurnal)
+  <div class="container" data-aos="zoom-out-down">
+    <div class="row mb-5">
+      <div class="col-lg-5 col-md-5 col-12 text-center">
+        <img class="image-jurnal" src="{{$jurnal->image}}">
+      </div>
+      <div class="col-lg-7 col-md-7 col-12" style="margin-top: 50px">
+        <h2 class="display-4 museo fw-bolder">{{$jurnal->title}}</h2>
+        <h4 class="museo fw-bold" style="color: hsl(1deg 76% 32%);">Volume {{$jurnal->volume}}</h4>
+        <p>{{$jurnal->ringkasan}}</p>
+        <a href="{{$jurnal->link}}"
+          class="btn btn-danger readmore-blog" style="background-color: hsl(1deg 76% 32%);">Baca Disini</a>
+      </div>
+    </div>
+
+  </div>
+  @endif
+  <!-- PODCAST -->
+  @if($poadcast)
+  <div class="container" data-aos="fade-right">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="display-4 museo fw-bolder">Udayana Podcast</h2>
+        <p style="margin-bottom: 30px">Sebuah persembahan dari BEM PM Udayana untuk kawan-kawan mahasiswa
+          Udayana. Di sini kita akan membawakan topik maupun isu yang sedang hangat diperbincangkan di seputar
+          dunia mahasiswa maupun yang sedang terjadi diantara kita secara santai. Selamat mendengarkan.</p>
+      </div>
+      <div class="col-12" style="margin-bottom: 50px">
+        <iframe src="{{$poadcast->link}}" width="100%"
+          height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+      </div>
+    </div>
+  </div>
+  @endif
+  <!-- END PODCAST -->
+</section>
+<!-- END JURNAL -->
 
     <!-- ======= Recent Blog Posts Section ======= -->
-    <section id="recent-blog-posts" class="recent-blog-posts">
+    <section id="recent-blog-posts" class="recent-blog-posts p-2 m-2">
 
       <div class="container" data-aos="fade-up">
 
@@ -933,46 +972,7 @@
       </div>
 
     </section><!-- End Recent Blog Posts Section -->
-    <!-- JURNAL -->
-
-    <section id="podCastJurnal">
-        @if($jurnal)
-      <div class="container" data-aos="zoom-out-down">
-        <div class="row mb-5">
-          <div class="col-lg-5 col-md-5 col-12 text-center">
-            <img class="image-jurnal" src="{{$jurnal->image}}" width="400px">
-          </div>
-          <div class="col-lg-7 col-md-7 col-12" style="margin-top: 50px">
-            <h2 class="display-4 museo fw-bolder">{{$jurnal->title}}</h2>
-            <h4 class="museo fw-bold" style="color: hsl(1deg 76% 32%);">Volume {{$jurnal->volume}}</h4>
-            <p>{{$jurnal->ringkasan}}</p>
-            <a href="{{$jurnal->link}}"
-              class="btn btn-danger readmore-blog" style="background-color: hsl(1deg 76% 32%);">Baca Disini</a>
-          </div>
-        </div>
-
-      </div>
-      @endif
-      <!-- PODCAST -->
-      @if($poadcast)
-      <div class="container" data-aos="fade-right">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="display-4 museo fw-bolder">Udayana Podcast</h2>
-            <p style="margin-bottom: 30px">Sebuah persembahan dari BEM PM Udayana untuk kawan-kawan mahasiswa
-              Udayana. Di sini kita akan membawakan topik maupun isu yang sedang hangat diperbincangkan di seputar
-              dunia mahasiswa maupun yang sedang terjadi diantara kita secara santai. Selamat mendengarkan.</p>
-          </div>
-          <div class="col-12" style="margin-bottom: 50px">
-            <iframe src="{{$poadcast->link}}" width="100%"
-              height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          </div>
-        </div>
-      </div>
-      @endif
-      <!-- END PODCAST -->
-    </section>
-    <!-- END JURNAL -->
+  
 
 
   </main><!-- End #main -->

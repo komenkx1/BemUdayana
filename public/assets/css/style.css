@@ -2453,3 +2453,10 @@ h3.post-title:hover{
 ul.pagination{
   flex-wrap:wrap!important
 }
+img.image-jurnal{
+  padding: 10px;
+  width: 100%;
+  position: relative;
+  background-position: center;
+  background-size: contain;
+}

@@ -52,7 +52,7 @@
 
           <div class="col-lg-4">
             <div class="box" data-aos="fade-up" data-aos-delay="200">
-              <img src="assets/img/Web-01.png" class="img-fluid" alt="">
+              <img src="assets/img/Web-01.webp" class="img-fluid" alt="">
               <h3>PEMANTIK</h3>
               <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
                   Sebagai Pemantik</mark> adalah upaya BEM PM Udayana nantinya bisa menjadi inisiator dalam bergerak untuk mahasiswa dan masyarakat. Sesuai dengan narasi Integrasi atau pembaruan, adalah bagaimana BEM PM berupaya memantik iklim inklusif dan merangkul seluruh elemen mahasiswa Udayana.</p>
@@ -61,7 +61,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0 ">
             <div class="box" data-aos="fade-up" data-aos-delay="400">
-              <img src="assets/img/Web-02.png" class="img-fluid" alt="">
+              <img src="assets/img/Web-02.webp" class="img-fluid" alt="">
               <h3>KALOBORATOR</h3>
               <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
                   Sebagai Kolaborator</mark> kami rasa salah satu solusi era VUCA (Vulnerable, Uncertainty, Complexity, Ambiguity) saat ini perlu langkah-langkah kolaborsai dengan berbagai pihak. Karena BEM PM sedbagai wadah yang inklusif tetap memerlukan potensi ataupun partisipasi dari pihak lain untuk bergerak memberi kebermanfaatan secara bersama-sama.
@@ -71,7 +71,7 @@
 
           <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="box" data-aos="fade-up" data-aos-delay="600">
-              <img src="assets/img/Web-03.png" class="img-fluid" alt="">
+              <img src="assets/img/Web-03.webp" class="img-fluid" alt="">
               <h3>PARTISIPAN</h3>
               <p style="font-weight: bold; text-align: justify;"><mark class="text-white mark-positioning">
                   Sebagai Partisipan</mark> BEM PM Udayana akan memposisikan diri untuk bisa turut serta berperan aktif dalam berbagai kegiatan baik dalam lingkup mahasiswa ataupun masyarakat. Pesan aktif ini sesuai dengan misi kami nomor 5, yaitu dalam aspek pengabdian dan pergerakan dengan berlandaskan nilai intelektual untuk memberi kontribusi nyata dan tepat sasaran.

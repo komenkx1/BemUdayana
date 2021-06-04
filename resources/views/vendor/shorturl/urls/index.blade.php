@@ -61,7 +61,7 @@
                                <form method="POST" action="{{ route('shorturl.url.destroy', $url->id) }}">
                                    @method('DELETE')
                                    @csrf
-                                   <button class="btn btn-sm btn-danger" href="#" role="button">Delete</button>
+                                   <button class="btn btn-sm btn-danger" href="#" onclick="return confirm('Apakah anda yakin menghapus link ini??')" role="button">Delete</button>
                                </form>
                            </td>
                        </tr>

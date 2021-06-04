@@ -469,7 +469,7 @@
               </div>
               <div class="member-info">
                 <h4>Dini</h4>
-                <span>Menteri Sinergisme Kampus</span>
+                <span>Wakil Menteri Sinergisme Kampus</span>
               </div>
             </div>
           </div>

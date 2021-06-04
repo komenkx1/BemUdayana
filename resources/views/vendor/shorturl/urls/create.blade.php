@@ -40,13 +40,13 @@
             <form method="POST" action="{{ route('shorturl.url.store') }}">
                 @csrf
                 <div class="input-group">
-                    <input type="text" class="form-control form-control-lg {{ $errors->has('url') ? 'is-invalid' : '' }}" id="url" name="url" placeholder="Paste an url" aria-label="Paste an url" value="{{ old('url') }}">
+                    <input type="text" required class="form-control form-control-lg {{ $errors->has('url') ? 'is-invalid' : '' }}" id="url" name="url" placeholder="Paste an url" aria-label="Paste an url" value="{{ old('url') }}">
                     <div class="input-group-append">
                         <button class="btn btn-primary" type="submit">Shorten</button>
                     </div>
                 </div>
                 @if ($errors->has('url'))
-                    <small id="url-error" class="form-text text-danger">
+                    <small id="url-error"  class="form-text text-danger">
                         {{ $errors->first('url') }}
                     </small>
                 @endif

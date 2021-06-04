@@ -42,7 +42,7 @@
             @method('PUT')
             @csrf
             <div class="input-group">
-                <input type="text" class="form-control form-control-lg {{ $errors->has('url') ? 'is-invalid' : '' }}" id="url" name="url" placeholder="Paste an url" aria-label="Paste an url" value="{{ old('url', $url->url) }}">
+                <input type="text" required class="form-control form-control-lg {{ $errors->has('url') ? 'is-invalid' : '' }}" id="url" name="url" placeholder="Paste an url" aria-label="Paste an url" value="{{ old('url', $url->url) }}">
                 <div class="input-group-append">
                     <button class="btn btn-primary" type="submit">Shorten</button>
                 </div>
@@ -55,8 +55,8 @@
             <div class="row mt-3">
                 <div class="col-lg-4 col-12">
                     <div class="form-group">
-                        <label for="code">Custom alias (optional)</label>
-                        <input type="text" class="form-control {{ $errors->has('code') ? 'is-invalid' : '' }}" id="code" name="code" placeholder="Set your custom alias" value="{{ old('code', $url->code) }}">
+                        <label for="code">Custom alias</label>
+                        <input required type="text" class="form-control {{ $errors->has('code') ? 'is-invalid' : '' }}" id="code" name="code" placeholder="Set your custom alias" value="{{ old('code', $url->code) }}">
                         @if ($errors->has('code'))
                             <small id="code-error" class="form-text text-danger">
                                 {{ $errors->first('code') }}

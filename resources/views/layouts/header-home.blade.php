@@ -20,7 +20,7 @@
           <li class="dropdown"><a href="javascript:void(0)" class="@if($title == "Lembaga Mahasiswa" || $title == "Unit Kegiatan Mahasiswa" || $title == "Paguyuban Dan Forum Agama") active @endif" ><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="#">Open Recruitment</a></li>
-              <li><a href="#">Student Day</a></li>
+              <li><a href="https://studentday.bemudayana.id/">Student Day</a></li>
               <li><a href="#">IMUN</a></li>
               <li><a href="{{Route('lembaga-mahasiswa')}}" class="@if($title == "Lembaga Mahasiswa") active @endif" >Lembaga Mahasiswa</a></li>
               <li><a href="{{Route('ukm')}}" class="@if($title == "Unit Kegiatan Mahasiswa") active @endif" >UKM</a></li>

@@ -749,14 +749,14 @@
           <div class="col-lg-3 col-md-6 grid-item filter-sosmas" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/SOSMAS/Dewi (wamen kebudayaan).webp" class="img-fluid" alt="">
+                <img src="assets/img/BEM/SOSMAS/Kia (wamen kewirausahaan).webp" class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>
                 </div>
               </div>
               <div class="member-info">
-                <h4>Anes</h4>
+                <h4>Kia</h4>
                 <span>Wakil Menteri Kewirausahaan</span>
               </div>
             </div>

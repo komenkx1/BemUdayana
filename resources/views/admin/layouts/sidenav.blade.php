@@ -11,12 +11,22 @@
       <div class="collapse navbar-collapse" id="sidenav-collapse-main">
         <!-- Nav items -->
         <ul class="navbar-nav">
+
           <li class="nav-item">
             <a class="nav-link" href="{{Route('dashboard')}}">
               <i class="ni ni-tv-2 text-primary"></i>
               <span class="nav-link-text">Dashboard</span>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{Route('shorturl.url.index')}}">
+              <i class="ni ni-curved-next text-danger"></i>
+              <span class="nav-link-text">Short Link</span>
+            </a>
+          </li>
+
+          @if (Auth::user()->role == 'admin')
           <li class="nav-item">
             <a class="nav-link" href="{{Route('blog-admin')}}">
               <i class="ni ni-single-copy-04 text-orange"></i>
@@ -26,7 +36,7 @@
           <li class="nav-item">
             <a class="nav-link" href="https://www.tidio.com/panel/login" target="blank">
               <i class="fas fa-external-link-alt"></i>
-              <span class="nav-link-text">HotLines</span> 
+              <span class="nav-link-text">HotLines</span>
             </a>
           </li>
           <li class="nav-item">
@@ -41,12 +51,8 @@
               <span class="nav-link-text">Poadcast</span>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{Route('shorturl.url.index')}}">
-              <i class="ni ni-curved-next text-danger"></i>
-              <span class="nav-link-text">Short Link</span>
-            </a>
-          </li>
+          @endif
+
           @if (Auth::user()->role == 'super admin')
 
           <li class="nav-item">

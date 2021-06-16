@@ -26,9 +26,11 @@ Route::middleware('optimizeImages')->group(function () {
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
-//dashboard
-Route::get('/bem-admin', [DashboardController::class, 'index'])->name('dashboard');
+    //dashboard
+    Route::get('/bem-admin', [DashboardController::class, 'index'])->name('dashboard');
+});
 
+Route::group(['middleware' => ['auth','roles:super admin,admin']], function () {
 //profile
 Route::put('/profile/update/{user:id}', [DashboardController::class, 'profile'])->name('profile.update');
 Route::view('/profile', 'admin/profile/index')->name('profile');

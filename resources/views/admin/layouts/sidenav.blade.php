@@ -26,7 +26,7 @@
             </a>
           </li>
 
-          @if (Auth::user()->role == 'admin')
+          @if (Auth::user()->role == 'admin' || Auth::user()->role == 'super admin')
           <li class="nav-item">
             <a class="nav-link" href="{{Route('blog-admin')}}">
               <i class="ni ni-single-copy-04 text-orange"></i>

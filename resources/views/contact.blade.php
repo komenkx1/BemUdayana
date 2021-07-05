@@ -47,7 +47,7 @@
         <div class="col-lg-3 mx-auto col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="member">
             <div class="member-imgs">
-              <img src="assets/img/NGURAH.webp" class="img-fluid" alt="">
+              <img src="assets/img/NGURAH-01.webp" class="img-fluid" alt="">
               <div class="social">
                 <a target="blank" href="https://wa.me/628814813118"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="https://www.instagram.com/ngurahdinataa/"><i class="bi bi-instagram"></i></a>

@@ -384,7 +384,7 @@
           <div class="col-lg-3 col-md-6 grid-item filter-rhh" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
               <div class="member-img">
-                <img src="assets/img/BEM/RHH/NGURAH.webp" class="img-fluid" alt="">
+                <img src="assets/img/BEM/RHH/NGURAH-01.webp class="img-fluid" alt="">
                 <div class="social">
                    <a target="blank" href="#"><i class="bi bi-whatsapp"></i></a>
                 <a target="blank" href="#"><i class="bi bi-instagram"></i></a>

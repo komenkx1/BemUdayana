@@ -14,7 +14,7 @@
           <li><a class="nav-link scrollto" href="#about">Tentang Kami</a></li>
           <li><a class="nav-link scrollto" href="#team">Fungsionaris</a></li>
           <!-- <li><a class="nav-link scrollto" href="#proker">Program Kerja</a></li> -->
-          <li><a class="nav-link scrollto" href="#podCastJurnal">Jurnal & Poadcast</a></li>          
+          <li><a class="nav-link scrollto" href="#podCastJurnal">Jurnal & Podcast</a></li>          
           @endif
           <li><a class="nav-link @if($title == "BEM PM UDAYANA - Integrasi Karya") scrollto @elseif($title == "Blog") active  @endif " href="@if($title == "BEM PM UDAYANA - Integrasi Karya")  #recent-blog-posts @else {{Route('blog')}} @endif">Blog</a></li>
           <li class="dropdown"><a href="javascript:void(0)" class="@if($title == "Lembaga Mahasiswa" || $title == "Unit Kegiatan Mahasiswa" || $title == "Paguyuban Dan Forum Agama") active @endif" ><span>Informasi</span> <i class="bi bi-chevron-down"></i></a>

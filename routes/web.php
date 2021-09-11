@@ -8,8 +8,10 @@ use App\Http\Controllers\Admin\HotlineController;
 use App\Http\Controllers\Admin\JurnalController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\PoadcastController;
+use App\Http\Controllers\PengajuanSertifikatController;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Hotline;
+use App\Models\PengajuanSertifikat;
 use Gallib\ShortUrl\Facades\ShortUrl;
 
 /*
@@ -80,6 +82,13 @@ Route::put('/bem-admin/poadcast/active/{poadcast:id}', [PoadcastController::clas
 Route::put('/bem-admin/poadcast/nonaktif/{poadcast:id}', [PoadcastController::class, 'nonaktif'])->name('poadcast.nonaktif');
 Route::put('/bem-admin/poadcast/update/{poadcast:id}', [PoadcastController::class, 'update'])->name('poadcast.update');
 Route::delete('/bem-admin/poadcast/destroy/{poadcast:id}', [PoadcastController::class, 'destroy'])->name('poadcast.destroy');
+
+//sertifikat
+
+Route::get('/bem-admin/sertifikat-list', [PengajuanSertifikatController::class, 'index'])->name('sertifikat');
+Route::get('/bem-admin/sertifikat-list/detail/{pengajuans:id}', [PengajuanSertifikatController::class, 'show'])->name('sertifikat.detail');
+Route::get('/bem-admin/download/{filename}', [PengajuanSertifikatController::class, 'download']);
+
 });
 
 //lannding

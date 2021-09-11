@@ -51,6 +51,13 @@
               <span class="nav-link-text">Poadcast</span>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="{{Route('sertifikat')}}">
+              <i class="ni ni-single-copy-04 text-black"></i>
+              <span class="nav-link-text">E-Sertifikat</span>
+            </a>
+          </li>
           @endif
 
           @if (Auth::user()->role == 'super admin')

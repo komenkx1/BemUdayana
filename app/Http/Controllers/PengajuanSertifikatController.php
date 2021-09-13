@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\PengajuanSertifikat;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Crypt;
 
@@ -18,6 +19,8 @@ class PengajuanSertifikatController extends Controller
     {   
         $pengajuans['file_excel_nama'] = Crypt::encrypt($pengajuans->file_excel_nama);
         $pengajuans['file_ttd_menteri'] = Crypt::encrypt($pengajuans->file_ttd_menteri);
+        $pengajuans['hari_tanggal'] = Carbon::parse($pengajuans->hari_tanggal)->isoFormat('dddd, D MMMM Y');
+// dd($pengajuans);
      if ($request->ajax()) {
         return response()->json($pengajuans);
      }

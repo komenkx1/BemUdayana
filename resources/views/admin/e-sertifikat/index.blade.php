@@ -25,22 +25,22 @@
                     </div>
                     <hr>
                     <div class="row container gx-auto">
-                        <div class="col-md-8 ">
+                        <div class="col-md-6 ">
                             <p>Nama Pembicara <br><span id="namaPembicara">I Komang Wahyu Hadi Permana</span></p>
                         </div>
-                        <div class="col-md-2 ">
+                        <div class="col-md-4 ">
                             <p>Tanggal <br><span id="tanggal">2021-02-01</span></p>
                         </div>
                         <div class="col-md-2 ">
                             <p>Jenis Cap <br><span id="jenisCap">Digital</span></p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <p>Tempat Acara <br><span id="tempat">I Komang Wahyu Hadi Permana</span></p>
                         </div>
                         <div class="col-md-4">
                             <p>Tanda Tangan Menteri <br><span id="ttdMenteri">Komang</span></p>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-6">
                             <p>Nama Menteri <br><span id="namaMenteri">Anak Agung Ngurah Upadana DInata</span></p>
                         </div>
                         <div class="col-md-4">
@@ -144,11 +144,12 @@
                 $('#modalDetail').modal('show');
                 var id = $(this).data('id');
                 var nama = $(this).data('nama');
-                console.log(id);
                 $.get("/bem-admin/sertifikat-list/detail/" + id, function(data) {
+                console.log(data.hari_tanggal);
+
                     $('#nomorSertif').html(data.nomor_sertif);
                     $('#descKegiatan').html(data.deskripsi_kegiatan);
-                    $('#tanngal').html(data.hari_tanggal);
+                    $('#tanggal').html(data.hari_tanggal);
                     $('#jenisCap').html(data.cap);
                     $('#tempat').html(data.bertempat_di);
                     $('#ttdMenteri').html(data.tambah_ttd_menteri);

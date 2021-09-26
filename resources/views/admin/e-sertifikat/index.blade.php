@@ -26,25 +26,25 @@
                     <hr>
                     <div class="row container gx-auto">
                         <div class="col-md-6 ">
-                            <p>Nama Pembicara <br><span id="namaPembicara">I Komang Wahyu Hadi Permana</span></p>
+                            <p>Nama Pembicara <br><span id="namaPembicara">-</span></p>
                         </div>
                         <div class="col-md-4 ">
-                            <p>Tanggal <br><span id="tanggal">2021-02-01</span></p>
+                            <p>Tanggal <br><span id="tanggal">-</span></p>
                         </div>
                         <div class="col-md-2 ">
-                            <p>Jenis Cap <br><span id="jenisCap">Digital</span></p>
+                            <p>Jenis Cap <br><span id="jenisCap">-</span></p>
                         </div>
                         <div class="col-md-6">
-                            <p>Tempat Acara <br><span id="tempat">I Komang Wahyu Hadi Permana</span></p>
+                            <p>Tempat Acara <br><span id="tempat">-</span></p>
                         </div>
                         <div class="col-md-4">
-                            <p>Tanda Tangan Menteri <br><span id="ttdMenteri">Komang</span></p>
+                            <p>Tanda Tangan Menteri <br><span id="ttdMenteri">-</span></p>
                         </div>
                         <div class="col-md-6">
-                            <p>Nama Menteri <br><span id="namaMenteri">Anak Agung Ngurah Upadana DInata</span></p>
+                            <p>Nama Menteri <br><span id="namaMenteri">-</span></p>
                         </div>
                         <div class="col-md-4">
-                            <p>Nim Menteri <br><span id="nimMenteri">1905551010</span></p>
+                            <p>Nim Menteri <br><span id="nimMenteri">-</span></p>
                         </div>
                         <div class="col-md-12 gx-auto d-flex justify-content-center">
                             <a href="#" target="_blank" class="btn btn-primary" id="btnPeserta">Download FIle Peserta</a>
@@ -145,8 +145,7 @@
                 var id = $(this).data('id');
                 var nama = $(this).data('nama');
                 $.get("/bem-admin/sertifikat-list/detail/" + id, function(data) {
-                console.log(data.hari_tanggal);
-
+                    $('#namaPembicara').html(data.nama_lengkap_pembicara);
                     $('#nomorSertif').html(data.nomor_sertif);
                     $('#descKegiatan').html(data.deskripsi_kegiatan);
                     $('#tanggal').html(data.hari_tanggal);

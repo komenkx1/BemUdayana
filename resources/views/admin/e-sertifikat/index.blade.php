@@ -190,7 +190,12 @@
                     $('#namaMenteri').html(data.nama_lengkap_menteri ?? '-');
                     $('#nimMenteri').html(data.nim_menteri ?? '-');
                     $('#btnPeserta').attr('href', '/bem-admin/download/' + data.file_excel_nama);
+                    if (data.tambah_ttd_menteri == "Tidak") {
+                    $('#btnTtd').addClass("d-none");                        
+                    }else{
+                    $('#btnTtd').removeClass("d-none");                        
                     $('#btnTtd').attr('href', '/bem-admin/download/' + data.file_ttd_menteri);
+                    }
                     if (data.status == 0) {
                         $('#formVerif').removeClass("d-none");
                         $('#formVerif').attr('action', '/bem-admin/sertifikat-list/verifikasi/' +

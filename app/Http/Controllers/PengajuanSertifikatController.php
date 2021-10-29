@@ -55,7 +55,7 @@ class PengajuanSertifikatController extends Controller
             "status" => 1
         ]);
 
-        return redirect()->back()->with('Info', 'Data Berhasil DI verifikasi');
+        return redirect()->back()->with('info', 'Data Berhasil DI verifikasi');
 
     }
 

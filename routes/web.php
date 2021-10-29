@@ -86,6 +86,8 @@ Route::delete('/bem-admin/poadcast/destroy/{poadcast:id}', [PoadcastController::
 //sertifikat
 
 Route::get('/bem-admin/sertifikat-list', [PengajuanSertifikatController::class, 'index'])->name('sertifikat');
+Route::delete('/bem-admin/sertifikat-list/destroy/{pengajuans:id}', [PengajuanSertifikatController::class, 'destroy'])->name('sertifikat.destroy');
+Route::patch('/bem-admin/sertifikat-list/verifikasi/{pengajuans:id}', [PengajuanSertifikatController::class, 'verifikasi'])->name('sertifikat.verifikasi');
 Route::get('/bem-admin/sertifikat-list/detail/{pengajuans:id}', [PengajuanSertifikatController::class, 'show'])->name('sertifikat.detail');
 Route::get('/bem-admin/download/{filename}', [PengajuanSertifikatController::class, 'download']);
 

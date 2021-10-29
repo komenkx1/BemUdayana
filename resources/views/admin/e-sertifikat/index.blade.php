@@ -1,10 +1,12 @@
 @extends('admin/layouts/master',['title'=>'Request Sertifikat'])
 @section('content')
-  <style>
-    p,span{
-      font-weight: 500;
-    }
-  </style>
+    <style>
+        p,
+        span {
+            font-weight: 500;
+        }
+
+    </style>
     <div class="modal fade bd-example-modal-lg" id="modalDetail" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -60,16 +62,38 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <form id="formDelete" action="#" method="post">
-                        @method('delete')
+
+                    <form id="formVerif" action="" method="post">
+                        @method('patch')
                         @csrf
-                        <button class="btn btn-default modal-dismiss" data-dismiss="modal" aria-hidden="true">Close</button>
+                        <button
+                            class="btn btn-success">Verifikasi</button>
+
                     </form>
+
+                    <button class="btn btn-default modal-dismiss" data-dismiss="modal" aria-hidden="true">Close</button>
+
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="header bg-yellow pb-6">
+        <div class="container-fluid">
+            <div class="header-body">
+                <div class="row align-items-center py-4">
+                    <div class="col-lg-6 col-7">
+                        <nav aria-label="breadcrumb" class="d-none d-md-inline-block">
+                            <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
+                                <li class="breadcrumb-item"><a href="/bem-admin"><i class="fas fa-home text-dark"></i></a>
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">E-Setifikat</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid mt--6">
         <div class="row">>
             <div class="col-xl-12">
@@ -93,6 +117,7 @@
                                         <th>Kementerian</th>
                                         <th>Jabatan</th>
                                         <th>Nama Kegiatan</th>
+                                        <th>Status</th>
                                         <th class="text-center">Action</th>
                                     </tr>
                                 </thead>
@@ -109,10 +134,20 @@
                                             <td>{{ $pengajuan->kementrian_yang_mengajukan }}</td>
                                             <td>{{ $pengajuan->jabatan }}</td>
                                             <td>{{ $pengajuan->nama_kegiatan }}</td>
+                                            <td>{{ $pengajuan->status ? 'terverifikasi' : '-' }}</td>
                                             <td class="text-center d-lg-flex justify-content-center">
                                                 <button class="btn btn-sm btn-info sertif-detail"
                                                     data-id="{{ $pengajuan->id }}" data-nama="{{ $pengajuan->id }}">View
                                                     Detail</button>
+                                                | 
+                                                <form id="formDelete"
+                                                    action="{{ Route('sertifikat.destroy', ['pengajuans' => $pengajuan->id]) }}"
+                                                    method="post">
+                                                    @method('delete')
+                                                    @csrf
+                                                    <button type="submit" onclick=" return confirm('Apakah Anda Ingin Menghapus Data Ini?') "
+                                                        class="btn btn-sm btn-danger">Hapus</button>
+                                                </form>
                                             </td>
 
                                         </tr>
@@ -125,7 +160,7 @@
                 </div>
             </div>
         </div>
-
+    </div>
 
     </div>
 
@@ -156,6 +191,14 @@
                     $('#nimMenteri').html(data.nim_menteri ?? '-');
                     $('#btnPeserta').attr('href', '/bem-admin/download/' + data.file_excel_nama);
                     $('#btnTtd').attr('href', '/bem-admin/download/' + data.file_ttd_menteri);
+                    if (data.status == 0) {
+                        $('#formVerif').removeClass("d-none");
+                        $('#formVerif').attr('action', '/bem-admin/sertifikat-list/verifikasi/' +
+                            id);
+                    } else {
+                        $('#formVerif').addClass("d-none");
+
+                    }
                 })
             });
             $('#tbPengurus').DataTable({
